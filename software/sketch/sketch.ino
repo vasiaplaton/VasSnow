@@ -1,18 +1,19 @@
 #include <util/delay.h>
 #define ANODES_Q 4
 #define CATHODES_Q 6
-#define EFFECTS_Q 7
+#define EFFECTS_Q 8
 #define MAX_BR 254
 #define MIN_BR 1
 #define EFFECT_DELAY 5000 // in ms
 #define AUTOCHANGE true
 int std_br = 100;
+byte counter = 0;
 int cathodes[CATHODES_Q] = { 10, 9, 1, 8, 7, 6};
 int anodes[ANODES_Q] = {5, 2, 3, 4};
 byte center = 1;
 byte leds[CATHODES_Q][ANODES_Q] = { { 0, 0, 1, 0}, { 0, 1, 0, 0}, { 1, 0, 0, 0}, { 0, 1, 1, 0},  { 0, 0, 0, 1}, { 1, 0, 0, 0}};
 byte cathod_num = 0;
-int effect_num = 6;
+int effect_num = 0;
 unsigned long int millis = 0;
 unsigned long int prev_millis = 0;
 ISR(TIM0_COMPA_vect)
@@ -89,7 +90,7 @@ void loop() {
   mange_effects();
   switch (effect_num) {
     case 0:
-      breath(300);
+      breath(200);
       break;
     case 1:
       round_m(70);
@@ -107,7 +108,11 @@ void loop() {
       firework(70, 1);
       break;
     case 6:
-      ray_m(35);
+      ray_m(35, counter);
+      counter++;
+      break;
+    case 7:
+      round3_m(50);
       break;
   }
 }

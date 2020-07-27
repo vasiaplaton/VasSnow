@@ -180,10 +180,11 @@ void firework(int del, int fade_del) {
   clear();
 
 }
-void ray_m(int del) {
+void ray_m(int del, int counter) {
   clear();
   set_br(std_br);
-  for (int i = 0; i < CATHODES_Q / 2; i++) {
+  counter %= 3;
+  for (int i = counter; i < CATHODES_Q / 2; i++) {
     for (int j = 0; j < ANODES_Q; j++) {
       leds[i][j] = 1;
       if (j != 1) delay(del);
@@ -194,7 +195,20 @@ void ray_m(int del) {
     }
     delay(del * 2);
   }
-  for (int i = CATHODES_Q / 2 - 1; i >= 0; i--) {
+
+  for (int i = 0; i <= counter; i++) {
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 1;
+      if (j != 1) delay(del);
+    }
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i + 3][j] = 1;
+      if (j != 1) delay(del);
+    }
+    delay(del * 2);
+  }
+  
+  for (int i = counter ; i >= 0; i--) {
     for (int j = ANODES_Q - 1; j >= 0; j--) {
       leds[i][j] = 0;
       if (j != 2) delay(del);
@@ -206,4 +220,49 @@ void ray_m(int del) {
     delay(del * 2);
   }
 
+  for (int i = CATHODES_Q / 2 - 1; i >= counter; i--) {
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+      leds[i][j] = 0;
+      if (j != 2) delay(del);
+    }
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+      leds[i + 3][j] = 0;
+      if (j != 2) delay(del);
+    }
+    delay(del * 2);
+  }
+
+}
+void round3_m(int del) {
+  clear();
+  delay(del);
+  set_br(std_br);
+  leds[0][0] = 1;
+  leds[0][2] = 1;
+  leds[0][3] = 1;
+  delay(del);
+  for (int i = 0; i < CATHODES_Q * 2 - 1; i++) {
+    leds[i / 2][0] = 1;
+    if (i % 2 != 0) {
+      leds[5-((i) / 2)][2] = 1;
+      leds[5-((i) / 2)][3] = 1;
+    }
+    else leds[5-((i) / 2)][1] = 1;
+    delay(del);
+  }
+  delay(del * 2);
+  leds[0][0] = 0;
+  leds[0][2] = 0;
+  leds[0][3] = 0;
+  delay(del);
+  for (int i = 0; i < CATHODES_Q * 2 - 1; i++) {
+    leds[i / 2][0] = 0;
+    if (i % 2 != 0) {
+      leds[5-((i) / 2)][2] = 0;
+      leds[5-((i) / 2)][3] = 0;
+    }
+    else leds[5-((i) / 2)][1] = 0;
+    delay(del);
+  }
+  delay(del * 2);
 }
