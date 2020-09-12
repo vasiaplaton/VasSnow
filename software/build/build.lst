@@ -1,0 +1,3078 @@
+
+/tmp/arduino_build_795988/sketch.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	26 c0       	rjmp	.+76     	; 0x4e <__ctors_end>
+   2:	40 c0       	rjmp	.+128    	; 0x84 <__bad_interrupt>
+   4:	3f c0       	rjmp	.+126    	; 0x84 <__bad_interrupt>
+   6:	3e c0       	rjmp	.+124    	; 0x84 <__bad_interrupt>
+   8:	3d c0       	rjmp	.+122    	; 0x84 <__bad_interrupt>
+   a:	3c c0       	rjmp	.+120    	; 0x84 <__bad_interrupt>
+   c:	3b c0       	rjmp	.+118    	; 0x84 <__bad_interrupt>
+   e:	3a c0       	rjmp	.+116    	; 0x84 <__bad_interrupt>
+  10:	39 c0       	rjmp	.+114    	; 0x84 <__bad_interrupt>
+  12:	d4 c0       	rjmp	.+424    	; 0x1bc <__vector_9>
+  14:	37 c0       	rjmp	.+110    	; 0x84 <__bad_interrupt>
+  16:	a8 c0       	rjmp	.+336    	; 0x168 <__vector_11>
+  18:	35 c0       	rjmp	.+106    	; 0x84 <__bad_interrupt>
+  1a:	34 c0       	rjmp	.+104    	; 0x84 <__bad_interrupt>
+  1c:	33 c0       	rjmp	.+102    	; 0x84 <__bad_interrupt>
+  1e:	32 c0       	rjmp	.+100    	; 0x84 <__bad_interrupt>
+  20:	31 c0       	rjmp	.+98     	; 0x84 <__bad_interrupt>
+
+00000022 <__trampolines_end>:
+__trampolines_start():
+  22:	00 00       	nop
+  24:	3b 00       	.word	0x003b	; ????
+  26:	38 00       	.word	0x0038	; ????
+
+00000028 <digital_pin_to_port_PGM>:
+  28:	02 02 02 01 01 01 01 01 01 01 01 02                 ............
+
+00000034 <digital_pin_to_bit_mask_PGM>:
+  34:	01 02 04 80 40 20 10 08 04 02 01 08                 ....@ ......
+
+00000040 <digital_pin_to_timer_PGM>:
+  40:	00 00 01 02 03 04 00 00 00 00 00 00 00 00           ..............
+
+0000004e <__ctors_end>:
+__dtors_end():
+  4e:	11 24       	eor	r1, r1
+  50:	1f be       	out	0x3f, r1	; 63
+  52:	cf e5       	ldi	r28, 0x5F	; 95
+  54:	d2 e0       	ldi	r29, 0x02	; 2
+  56:	de bf       	out	0x3e, r29	; 62
+  58:	cd bf       	out	0x3d, r28	; 61
+
+0000005a <__do_copy_data>:
+__do_copy_data():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  5a:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  5c:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  5e:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  60:	e0 e5       	ldi	r30, 0x50	; 80
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  62:	fc e0       	ldi	r31, 0x0C	; 12
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  64:	02 c0       	rjmp	.+4      	; 0x6a <__do_copy_data+0x10>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  66:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  68:	0d 92       	st	X+, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  6a:	ac 38       	cpi	r26, 0x8C	; 140
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  6c:	b1 07       	cpc	r27, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  6e:	d9 f7       	brne	.-10     	; 0x66 <__do_copy_data+0xc>
+
+00000070 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  70:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  72:	ac e8       	ldi	r26, 0x8C	; 140
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  74:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  76:	01 c0       	rjmp	.+2      	; 0x7a <.do_clear_bss_start>
+
+00000078 <.do_clear_bss_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  78:	1d 92       	st	X+, r1
+
+0000007a <.do_clear_bss_start>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  7a:	aa 39       	cpi	r26, 0x9A	; 154
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  7c:	b2 07       	cpc	r27, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  7e:	e1 f7       	brne	.-8      	; 0x78 <.do_clear_bss_loop>
+.do_clear_bss_start():
+  80:	04 d1       	rcall	.+520    	; 0x28a <main>
+  82:	e4 c5       	rjmp	.+3016   	; 0xc4c <_exit>
+
+00000084 <__bad_interrupt>:
+__vector_1():
+  84:	bd cf       	rjmp	.-134    	; 0x0 <__vectors>
+
+00000086 <digitalWrite>:
+digitalWrite():
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:138
+
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  86:	87 ff       	sbrs	r24, 7
+  88:	07 c0       	rjmp	.+14     	; 0x98 <digitalWrite+0x12>
+  8a:	e8 2f       	mov	r30, r24
+  8c:	ef 77       	andi	r30, 0x7F	; 127
+  8e:	8a e0       	ldi	r24, 0x0A	; 10
+  90:	8e 1b       	sub	r24, r30
+  92:	e8 30       	cpi	r30, 0x08	; 8
+  94:	08 f0       	brcs	.+2      	; 0x98 <digitalWrite+0x12>
+  96:	8f ef       	ldi	r24, 0xFF	; 255
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:139
+  uint8_t timer = digitalPinToTimer(pin);
+  98:	90 e0       	ldi	r25, 0x00	; 0
+  9a:	fc 01       	movw	r30, r24
+  9c:	e0 5c       	subi	r30, 0xC0	; 192
+  9e:	ff 4f       	sbci	r31, 0xFF	; 255
+  a0:	34 91       	lpm	r19, Z
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:140
+  uint8_t bit = digitalPinToBitMask(pin);
+  a2:	fc 01       	movw	r30, r24
+  a4:	ec 5c       	subi	r30, 0xCC	; 204
+  a6:	ff 4f       	sbci	r31, 0xFF	; 255
+  a8:	24 91       	lpm	r18, Z
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:141
+  uint8_t port = digitalPinToPort(pin);
+  aa:	fc 01       	movw	r30, r24
+  ac:	e8 5d       	subi	r30, 0xD8	; 216
+  ae:	ff 4f       	sbci	r31, 0xFF	; 255
+  b0:	e4 91       	lpm	r30, Z
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:144
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+  b2:	ee 23       	and	r30, r30
+  b4:	b9 f0       	breq	.+46     	; 0xe4 <digitalWrite+0x5e>
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:148
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+  b6:	33 23       	and	r19, r19
+  b8:	29 f0       	breq	.+10     	; 0xc4 <digitalWrite+0x3e>
+turnOffPWM():
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:67
+}
+
+static void turnOffPWM(uint8_t timer)
+{
+  #if defined(TCCR0A) && defined(COM0A1)
+  if( timer == TIMER0A){
+  ba:	31 30       	cpi	r19, 0x01	; 1
+  bc:	a1 f4       	brne	.+40     	; 0xe6 <digitalWrite+0x60>
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:68
+    cbi(TCCR0A, COM0A1);
+  be:	80 b7       	in	r24, 0x30	; 48
+  c0:	8f 77       	andi	r24, 0x7F	; 127
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:75
+  } else
+  #endif
+
+  #if defined(TCCR0A) && defined(COM0B1)
+  if( timer == TIMER0B){
+    cbi(TCCR0A, COM0B1);
+  c2:	80 bf       	out	0x30, r24	; 48
+digitalWrite():
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:150
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+  c4:	f0 e0       	ldi	r31, 0x00	; 0
+  c6:	ee 0f       	add	r30, r30
+  c8:	ff 1f       	adc	r31, r31
+  ca:	ee 5d       	subi	r30, 0xDE	; 222
+  cc:	ff 4f       	sbci	r31, 0xFF	; 255
+  ce:	a5 91       	lpm	r26, Z+
+  d0:	b4 91       	lpm	r27, Z
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:153
+
+  if (val == LOW) {
+    uint8_t oldSREG = SREG;
+  d2:	8f b7       	in	r24, 0x3f	; 63
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:152
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+
+  if (val == LOW) {
+  d4:	61 11       	cpse	r22, r1
+  d6:	17 c0       	rjmp	.+46     	; 0x106 <digitalWrite+0x80>
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:154
+    uint8_t oldSREG = SREG;
+    cli();
+  d8:	f8 94       	cli
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:155
+    *out &= ~bit;
+  da:	ec 91       	ld	r30, X
+  dc:	20 95       	com	r18
+  de:	2e 23       	and	r18, r30
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:160
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+    *out |= bit;
+  e0:	2c 93       	st	X, r18
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:161
+    SREG = oldSREG;
+  e2:	8f bf       	out	0x3f, r24	; 63
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:163
+  }
+}
+  e4:	08 95       	ret
+turnOffPWM():
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:74
+    //cbi(TCCR0A, COM0A0);
+  } else
+  #endif
+
+  #if defined(TCCR0A) && defined(COM0B1)
+  if( timer == TIMER0B){
+  e6:	32 30       	cpi	r19, 0x02	; 2
+  e8:	19 f4       	brne	.+6      	; 0xf0 <digitalWrite+0x6a>
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:75
+    cbi(TCCR0A, COM0B1);
+  ea:	80 b7       	in	r24, 0x30	; 48
+  ec:	8f 7d       	andi	r24, 0xDF	; 223
+  ee:	e9 cf       	rjmp	.-46     	; 0xc2 <digitalWrite+0x3c>
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:81
+    //cbi(TCCR0A, COM0B0);
+  } else
+  #endif
+
+  #if defined(TCCR1A) && defined(COM1A1)
+  if( timer == TIMER1A){
+  f0:	33 30       	cpi	r19, 0x03	; 3
+  f2:	21 f4       	brne	.+8      	; 0xfc <digitalWrite+0x76>
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:82
+    cbi(TCCR1A, COM1A1);
+  f4:	8f b5       	in	r24, 0x2f	; 47
+  f6:	8f 77       	andi	r24, 0x7F	; 127
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:116
+  } else
+  #endif
+
+  #if defined(TCCR1A) && defined(COM1B1)
+  if( timer == TIMER1B){
+    cbi(TCCR1A, COM1B1);
+  f8:	8f bd       	out	0x2f, r24	; 47
+  fa:	e4 cf       	rjmp	.-56     	; 0xc4 <digitalWrite+0x3e>
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:115
+  #endif
+  } else
+  #endif
+
+  #if defined(TCCR1A) && defined(COM1B1)
+  if( timer == TIMER1B){
+  fc:	34 30       	cpi	r19, 0x04	; 4
+  fe:	11 f7       	brne	.-60     	; 0xc4 <digitalWrite+0x3e>
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:116
+    cbi(TCCR1A, COM1B1);
+ 100:	8f b5       	in	r24, 0x2f	; 47
+ 102:	8f 7d       	andi	r24, 0xDF	; 223
+ 104:	f9 cf       	rjmp	.-14     	; 0xf8 <digitalWrite+0x72>
+digitalWrite():
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:159
+    cli();
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+ 106:	f8 94       	cli
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring_digital.c:160
+    *out |= bit;
+ 108:	ec 91       	ld	r30, X
+ 10a:	2e 2b       	or	r18, r30
+ 10c:	e9 cf       	rjmp	.-46     	; 0xe0 <digitalWrite+0x5a>
+
+0000010e <delay>:
+delay():
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:485
+
+
+#endif
+
+  // busy wait
+  __asm__ __volatile__ (
+ 10e:	2c ec       	ldi	r18, 0xCC	; 204
+ 110:	37 e0       	ldi	r19, 0x07	; 7
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:307
+}
+void yield(void) __attribute__ ((weak, alias("__empty")));
+
+void delay(unsigned long ms) //non-millis-timer-dependent delay()
+{
+  while(ms--){
+ 112:	61 50       	subi	r22, 0x01	; 1
+ 114:	71 09       	sbc	r23, r1
+ 116:	81 09       	sbc	r24, r1
+ 118:	91 09       	sbc	r25, r1
+ 11a:	08 f4       	brcc	.+2      	; 0x11e <delay+0x10>
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:311
+    yield();
+    delayMicroseconds(1000);
+  }
+}
+ 11c:	08 95       	ret
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:485
+
+
+#endif
+
+  // busy wait
+  __asm__ __volatile__ (
+ 11e:	f9 01       	movw	r30, r18
+ 120:	31 97       	sbiw	r30, 0x01	; 1
+ 122:	f1 f7       	brne	.-4      	; 0x120 <delay+0x12>
+ 124:	f6 cf       	rjmp	.-20     	; 0x112 <delay+0x4>
+
+00000126 <random_f()>:
+_Z8random_fv():
+/home/vasia/projects/VasSnow/software/sketch/random.ino:20
+}
+
+uint16_t random_f(void)
+{
+
+  return (random_number = lfsr16_next(random_number));
+ 126:	20 91 8d 00 	lds	r18, 0x008D	; 0x80008d <random_number>
+ 12a:	30 91 8e 00 	lds	r19, 0x008E	; 0x80008e <random_number+0x1>
+lfsr16_next():
+/home/vasia/projects/VasSnow/software/sketch/random.ino:8
+static uint16_t random_number = 0;
+
+static uint16_t lfsr16_next(uint16_t n)
+{
+
+  return (n >> 0x01U) ^ (-(n & 0x01U) & 0xB400U);
+ 12e:	c9 01       	movw	r24, r18
+ 130:	81 70       	andi	r24, 0x01	; 1
+ 132:	99 27       	eor	r25, r25
+ 134:	91 95       	neg	r25
+ 136:	81 95       	neg	r24
+ 138:	91 09       	sbc	r25, r1
+ 13a:	88 27       	eor	r24, r24
+ 13c:	94 7b       	andi	r25, 0xB4	; 180
+ 13e:	36 95       	lsr	r19
+ 140:	27 95       	ror	r18
+ 142:	82 27       	eor	r24, r18
+ 144:	93 27       	eor	r25, r19
+_Z8random_fv():
+/home/vasia/projects/VasSnow/software/sketch/random.ino:20
+}
+
+uint16_t random_f(void)
+{
+
+  return (random_number = lfsr16_next(random_number));
+ 146:	90 93 8e 00 	sts	0x008E, r25	; 0x80008e <random_number+0x1>
+ 14a:	80 93 8d 00 	sts	0x008D, r24	; 0x80008d <random_number>
+/home/vasia/projects/VasSnow/software/sketch/random.ino:21
+}
+ 14e:	08 95       	ret
+
+00000150 <clear()>:
+_Z5clearv():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:50
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = ray[j];
+    }
+  }
+}
+void clear() {
+ 150:	e0 e6       	ldi	r30, 0x60	; 96
+ 152:	f0 e0       	ldi	r31, 0x00	; 0
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:53
+  for (int i = 0; i < CATHODES_Q; i++) {
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 0;
+ 154:	10 82       	st	Z, r1
+ 156:	11 82       	std	Z+1, r1	; 0x01
+ 158:	12 82       	std	Z+2, r1	; 0x02
+ 15a:	13 82       	std	Z+3, r1	; 0x03
+ 15c:	34 96       	adiw	r30, 0x04	; 4
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:51
+      leds[i][j] = ray[j];
+    }
+  }
+}
+void clear() {
+  for (int i = 0; i < CATHODES_Q; i++) {
+ 15e:	80 e0       	ldi	r24, 0x00	; 0
+ 160:	e8 37       	cpi	r30, 0x78	; 120
+ 162:	f8 07       	cpc	r31, r24
+ 164:	b9 f7       	brne	.-18     	; 0x154 <clear()+0x4>
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:56
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 0;
+    }
+  }
+}
+ 166:	08 95       	ret
+
+00000168 <__vector_11>:
+__vector_11():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:34
+    if (center == 1) digitalWrite(0, HIGH);
+  }
+
+}
+ISR(TIM0_OVF_vect)
+{
+ 168:	1f 92       	push	r1
+ 16a:	0f 92       	push	r0
+ 16c:	0f b6       	in	r0, 0x3f	; 63
+ 16e:	0f 92       	push	r0
+ 170:	11 24       	eor	r1, r1
+ 172:	8f 93       	push	r24
+ 174:	9f 93       	push	r25
+ 176:	af 93       	push	r26
+ 178:	bf 93       	push	r27
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:35
+  PORTA |= 0b00011111;
+ 17a:	8b b3       	in	r24, 0x1b	; 27
+ 17c:	8f 61       	ori	r24, 0x1F	; 31
+ 17e:	8b bb       	out	0x1b, r24	; 27
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:36
+  PORTB |= 0b00000010;
+ 180:	c1 9a       	sbi	0x18, 1	; 24
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:37
+  PORTB &= 0b11111110;
+ 182:	c0 98       	cbi	0x18, 0	; 24
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:38
+  millis += 2;
+ 184:	80 91 93 00 	lds	r24, 0x0093	; 0x800093 <millis>
+ 188:	90 91 94 00 	lds	r25, 0x0094	; 0x800094 <millis+0x1>
+ 18c:	a0 91 95 00 	lds	r26, 0x0095	; 0x800095 <millis+0x2>
+ 190:	b0 91 96 00 	lds	r27, 0x0096	; 0x800096 <millis+0x3>
+ 194:	02 96       	adiw	r24, 0x02	; 2
+ 196:	a1 1d       	adc	r26, r1
+ 198:	b1 1d       	adc	r27, r1
+ 19a:	80 93 93 00 	sts	0x0093, r24	; 0x800093 <millis>
+ 19e:	90 93 94 00 	sts	0x0094, r25	; 0x800094 <millis+0x1>
+ 1a2:	a0 93 95 00 	sts	0x0095, r26	; 0x800095 <millis+0x2>
+ 1a6:	b0 93 96 00 	sts	0x0096, r27	; 0x800096 <millis+0x3>
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:39
+}
+ 1aa:	bf 91       	pop	r27
+ 1ac:	af 91       	pop	r26
+ 1ae:	9f 91       	pop	r25
+ 1b0:	8f 91       	pop	r24
+ 1b2:	0f 90       	pop	r0
+ 1b4:	0f be       	out	0x3f, r0	; 63
+ 1b6:	0f 90       	pop	r0
+ 1b8:	1f 90       	pop	r1
+ 1ba:	18 95       	reti
+
+000001bc <__vector_9>:
+__vector_9():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:20
+byte cathod_num = 0;
+int effect_num = 0;
+unsigned long int millis = 0;
+unsigned long int prev_millis = 0;
+ISR(TIM0_COMPA_vect)
+{
+ 1bc:	1f 92       	push	r1
+ 1be:	0f 92       	push	r0
+ 1c0:	0f b6       	in	r0, 0x3f	; 63
+ 1c2:	0f 92       	push	r0
+ 1c4:	11 24       	eor	r1, r1
+ 1c6:	cf 92       	push	r12
+ 1c8:	df 92       	push	r13
+ 1ca:	ef 92       	push	r14
+ 1cc:	ff 92       	push	r15
+ 1ce:	1f 93       	push	r17
+ 1d0:	2f 93       	push	r18
+ 1d2:	3f 93       	push	r19
+ 1d4:	4f 93       	push	r20
+ 1d6:	5f 93       	push	r21
+ 1d8:	6f 93       	push	r22
+ 1da:	7f 93       	push	r23
+ 1dc:	8f 93       	push	r24
+ 1de:	9f 93       	push	r25
+ 1e0:	af 93       	push	r26
+ 1e2:	bf 93       	push	r27
+ 1e4:	cf 93       	push	r28
+ 1e6:	df 93       	push	r29
+ 1e8:	ef 93       	push	r30
+ 1ea:	ff 93       	push	r31
+ 1ec:	24 e8       	ldi	r18, 0x84	; 132
+ 1ee:	c2 2e       	mov	r12, r18
+ 1f0:	20 e0       	ldi	r18, 0x00	; 0
+ 1f2:	d2 2e       	mov	r13, r18
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:21
+  for (int i = 0; i < ANODES_Q; i++) {
+ 1f4:	f1 2c       	mov	r15, r1
+ 1f6:	e1 2c       	mov	r14, r1
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:22
+    if (leds[cathod_num][i] == 1)  digitalWrite(anodes[i], HIGH);
+ 1f8:	10 91 8c 00 	lds	r17, 0x008C	; 0x80008c <__data_end>
+ 1fc:	c1 2f       	mov	r28, r17
+ 1fe:	d0 e0       	ldi	r29, 0x00	; 0
+ 200:	f6 01       	movw	r30, r12
+ 202:	80 81       	ld	r24, Z
+ 204:	f2 e0       	ldi	r31, 0x02	; 2
+ 206:	cf 0e       	add	r12, r31
+ 208:	d1 1c       	adc	r13, r1
+ 20a:	fe 01       	movw	r30, r28
+ 20c:	ee 0f       	add	r30, r30
+ 20e:	ff 1f       	adc	r31, r31
+ 210:	ee 0f       	add	r30, r30
+ 212:	ff 1f       	adc	r31, r31
+ 214:	e0 5a       	subi	r30, 0xA0	; 160
+ 216:	ff 4f       	sbci	r31, 0xFF	; 255
+ 218:	ee 0d       	add	r30, r14
+ 21a:	ff 1d       	adc	r31, r15
+ 21c:	90 81       	ld	r25, Z
+ 21e:	61 e0       	ldi	r22, 0x01	; 1
+ 220:	91 30       	cpi	r25, 0x01	; 1
+ 222:	09 f0       	breq	.+2      	; 0x226 <__vector_9+0x6a>
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:23
+    else digitalWrite(anodes[i], LOW);
+ 224:	60 e0       	ldi	r22, 0x00	; 0
+ 226:	2f df       	rcall	.-418    	; 0x86 <digitalWrite>
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:21
+int effect_num = 0;
+unsigned long int millis = 0;
+unsigned long int prev_millis = 0;
+ISR(TIM0_COMPA_vect)
+{
+  for (int i = 0; i < ANODES_Q; i++) {
+ 228:	8f ef       	ldi	r24, 0xFF	; 255
+ 22a:	e8 1a       	sub	r14, r24
+ 22c:	f8 0a       	sbc	r15, r24
+ 22e:	94 e0       	ldi	r25, 0x04	; 4
+ 230:	e9 16       	cp	r14, r25
+ 232:	f1 04       	cpc	r15, r1
+ 234:	09 f7       	brne	.-62     	; 0x1f8 <__vector_9+0x3c>
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:25
+    if (leds[cathod_num][i] == 1)  digitalWrite(anodes[i], HIGH);
+    else digitalWrite(anodes[i], LOW);
+  }
+  digitalWrite(cathodes[cathod_num], LOW);
+ 236:	cc 0f       	add	r28, r28
+ 238:	dd 1f       	adc	r29, r29
+ 23a:	c8 58       	subi	r28, 0x88	; 136
+ 23c:	df 4f       	sbci	r29, 0xFF	; 255
+ 23e:	60 e0       	ldi	r22, 0x00	; 0
+ 240:	88 81       	ld	r24, Y
+ 242:	21 df       	rcall	.-446    	; 0x86 <digitalWrite>
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:26
+  cathod_num++;
+ 244:	1f 5f       	subi	r17, 0xFF	; 255
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:27
+  if (cathod_num >= CATHODES_Q) {
+ 246:	16 30       	cpi	r17, 0x06	; 6
+ 248:	d0 f4       	brcc	.+52     	; 0x27e <__stack+0x1f>
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:26
+  for (int i = 0; i < ANODES_Q; i++) {
+    if (leds[cathod_num][i] == 1)  digitalWrite(anodes[i], HIGH);
+    else digitalWrite(anodes[i], LOW);
+  }
+  digitalWrite(cathodes[cathod_num], LOW);
+  cathod_num++;
+ 24a:	10 93 8c 00 	sts	0x008C, r17	; 0x80008c <__data_end>
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:32
+  if (cathod_num >= CATHODES_Q) {
+    cathod_num = 0;
+    if (center == 1) digitalWrite(0, HIGH);
+  }
+
+}
+ 24e:	ff 91       	pop	r31
+ 250:	ef 91       	pop	r30
+ 252:	df 91       	pop	r29
+ 254:	cf 91       	pop	r28
+ 256:	bf 91       	pop	r27
+ 258:	af 91       	pop	r26
+ 25a:	9f 91       	pop	r25
+ 25c:	8f 91       	pop	r24
+ 25e:	7f 91       	pop	r23
+ 260:	6f 91       	pop	r22
+ 262:	5f 91       	pop	r21
+ 264:	4f 91       	pop	r20
+ 266:	3f 91       	pop	r19
+ 268:	2f 91       	pop	r18
+ 26a:	1f 91       	pop	r17
+ 26c:	ff 90       	pop	r15
+ 26e:	ef 90       	pop	r14
+ 270:	df 90       	pop	r13
+ 272:	cf 90       	pop	r12
+ 274:	0f 90       	pop	r0
+ 276:	0f be       	out	0x3f, r0	; 63
+ 278:	0f 90       	pop	r0
+ 27a:	1f 90       	pop	r1
+ 27c:	18 95       	reti
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:28
+    else digitalWrite(anodes[i], LOW);
+  }
+  digitalWrite(cathodes[cathod_num], LOW);
+  cathod_num++;
+  if (cathod_num >= CATHODES_Q) {
+    cathod_num = 0;
+ 27e:	10 92 8c 00 	sts	0x008C, r1	; 0x80008c <__data_end>
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:29
+    if (center == 1) digitalWrite(0, HIGH);
+ 282:	61 e0       	ldi	r22, 0x01	; 1
+ 284:	80 e0       	ldi	r24, 0x00	; 0
+ 286:	ff de       	rcall	.-514    	; 0x86 <digitalWrite>
+ 288:	e2 cf       	rjmp	.-60     	; 0x24e <__vector_9+0x92>
+
+0000028a <main>:
+main():
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/main.cpp:6
+#include <Arduino.h>
+
+int main(void)
+{
+  #ifdef TUNED_OSCCAL_VALUE
+  OSCCAL = TUNED_OSCCAL_VALUE; //set the oscillator calibration value based on the pins_arduino.h file. If this is not set, it will be optimised away
+ 28a:	81 b7       	in	r24, 0x31	; 49
+ 28c:	81 bf       	out	0x31, r24	; 49
+init():
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:699
+    } else {
+      OSCCAL += 5;
+    }
+  }
+  #endif
+  sei();
+ 28e:	78 94       	sei
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:831
+  #endif
+  #endif
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0) && defined(WGM01)
+  sbi(TCCR0A, WGM01);
+ 290:	80 b7       	in	r24, 0x30	; 48
+ 292:	82 60       	ori	r24, 0x02	; 2
+ 294:	80 bf       	out	0x30, r24	; 48
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:832
+  sbi(TCCR0A, WGM00);
+ 296:	80 b7       	in	r24, 0x30	; 48
+ 298:	81 60       	ori	r24, 0x01	; 1
+ 29a:	80 bf       	out	0x30, r24	; 48
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:855
+  #endif
+
+  // Millis timer is always processor clock divided by MillisTimer_Prescale_Value (64)
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+   #ifdef TCCR0B
+    TCCR0B = (TCCR0B & ~((1<<CS02)|(1<<CS01)|(1<<CS00))) | (MillisTimer_Prescale_Index << CS00);
+ 29c:	83 b7       	in	r24, 0x33	; 51
+ 29e:	88 7f       	andi	r24, 0xF8	; 248
+ 2a0:	83 60       	ori	r24, 0x03	; 3
+ 2a2:	83 bf       	out	0x33, r24	; 51
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:867
+  TCCR1B = (TCCR1B & ~((1<<CS13)|(1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #elif (TIMER_TO_USE_FOR_MILLIS == 1)
+  TCCR1B = (TCCR1B & ~((1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 2a4:	78 94       	sei
+initToneTimerInternal():
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:526
+  sbi(TCCR1C, PWM1D);
+  cbi(TCCR1D, WGM11);
+  sbi(TCCR1D, WGM10);
+  TCCR1B |= (ToneTimer_Prescale_Index << CS10);
+  #elif (TIMER_TO_USE_FOR_TONE == 1)
+  TCCR1B &= ~((1<<CS12) | (1<<CS11) | (1<<CS10)); //stop the clock to configure
+ 2a6:	8e b5       	in	r24, 0x2e	; 46
+ 2a8:	88 7f       	andi	r24, 0xF8	; 248
+ 2aa:	8e bd       	out	0x2e, r24	; 46
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:528
+  // Use the Tone Timer for phase correct PWM
+  sbi(TCCR1A, WGM10);
+ 2ac:	8f b5       	in	r24, 0x2f	; 47
+ 2ae:	81 60       	ori	r24, 0x01	; 1
+ 2b0:	8f bd       	out	0x2f, r24	; 47
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:529
+  cbi(TCCR1A, WGM11);
+ 2b2:	8f b5       	in	r24, 0x2f	; 47
+ 2b4:	8d 7f       	andi	r24, 0xFD	; 253
+ 2b6:	8f bd       	out	0x2f, r24	; 47
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:530
+  cbi(TCCR1B, WGM12);
+ 2b8:	8e b5       	in	r24, 0x2e	; 46
+ 2ba:	87 7f       	andi	r24, 0xF7	; 247
+ 2bc:	8e bd       	out	0x2e, r24	; 46
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:531
+  cbi(TCCR1B, WGM13);
+ 2be:	8e b5       	in	r24, 0x2e	; 46
+ 2c0:	8f 7e       	andi	r24, 0xEF	; 239
+ 2c2:	8e bd       	out	0x2e, r24	; 46
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:532
+  TCCR1B |= (ToneTimer_Prescale_Index << CS10); //set the clock
+ 2c4:	8e b5       	in	r24, 0x2e	; 46
+ 2c6:	83 60       	ori	r24, 0x03	; 3
+ 2c8:	8e bd       	out	0x2e, r24	; 46
+init():
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:893
+
+  // Initialize the ADC
+  #if defined( INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER ) && INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER
+  #if defined(ADCSRA)
+    // set a2d prescale factor
+  ADCSRA = (ADCSRA & ~((1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0))) | (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+ 2ca:	86 b1       	in	r24, 0x06	; 6
+ 2cc:	88 77       	andi	r24, 0x78	; 120
+ 2ce:	86 68       	ori	r24, 0x86	; 134
+ 2d0:	86 b9       	out	0x06, r24	; 6
+/home/vasia/.arduino15/packages/ATTinyCore/hardware/avr/1.3.3/cores/tiny/wiring.c:895
+    // enable a2d conversions
+    sbi(ADCSRA, ADEN);
+ 2d2:	37 9a       	sbi	0x06, 7	; 6
+setup():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:74
+      effect_num = 0;
+    }
+  }
+}
+void setup() {
+  DDRA = 0b11111111; // all output
+ 2d4:	9f ef       	ldi	r25, 0xFF	; 255
+ 2d6:	9a bb       	out	0x1a, r25	; 26
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:75
+  DDRB = 0b00000111;// all output
+ 2d8:	87 e0       	ldi	r24, 0x07	; 7
+ 2da:	87 bb       	out	0x17, r24	; 23
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:76
+  PORTA = 0b11111111;// all high
+ 2dc:	9b bb       	out	0x1b, r25	; 27
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:77
+  PORTB = 0b00000111;// all high
+ 2de:	88 bb       	out	0x18, r24	; 24
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:78
+  TCCR0A |= 0b00000011;
+ 2e0:	80 b7       	in	r24, 0x30	; 48
+ 2e2:	83 60       	ori	r24, 0x03	; 3
+ 2e4:	80 bf       	out	0x30, r24	; 48
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:79
+  TCCR0B = 0b00000011;
+ 2e6:	83 e0       	ldi	r24, 0x03	; 3
+ 2e8:	83 bf       	out	0x33, r24	; 51
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+  PORTB |= 0b00000010;
+  PORTB &= 0b11111110;
+  millis += 2;
+}
+void set_br(byte br) {
+  OCR0A = 0xFF - br;
+ 2ea:	8b e9       	ldi	r24, 0x9B	; 155
+ 2ec:	86 bf       	out	0x36, r24	; 54
+setup():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:81
+  PORTA = 0b11111111;// all high
+  PORTB = 0b00000111;// all high
+  TCCR0A |= 0b00000011;
+  TCCR0B = 0b00000011;
+  set_br(std_br);
+  TIMSK0 |= _BV(OCIE0A);
+ 2ee:	89 b7       	in	r24, 0x39	; 57
+ 2f0:	82 60       	ori	r24, 0x02	; 2
+ 2f2:	89 bf       	out	0x39, r24	; 57
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:82
+  TIMSK0 |= _BV(TOIE0);
+ 2f4:	89 b7       	in	r24, 0x39	; 57
+ 2f6:	81 60       	ori	r24, 0x01	; 1
+ 2f8:	89 bf       	out	0x39, r24	; 57
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:83
+  interrupts();
+ 2fa:	78 94       	sei
+random_init():
+/home/vasia/projects/VasSnow/software/sketch/random.ino:13
+  return (n >> 0x01U) ^ (-(n & 0x01U) & 0xB400U);
+}
+
+void random_init(uint16_t seed)
+{
+  random_number = lfsr16_next(eeprom_read_word((uint16_t *)RANDOM_SEED_ADDRESS) ^ seed);
+ 2fc:	90 e0       	ldi	r25, 0x00	; 0
+ 2fe:	80 e0       	ldi	r24, 0x00	; 0
+ 300:	47 d4       	rcall	.+2190   	; 0xb90 <eeprom_read_word>
+ 302:	2a e0       	ldi	r18, 0x0A	; 10
+ 304:	82 27       	eor	r24, r18
+lfsr16_next():
+/home/vasia/projects/VasSnow/software/sketch/random.ino:8
+static uint16_t random_number = 0;
+
+static uint16_t lfsr16_next(uint16_t n)
+{
+
+  return (n >> 0x01U) ^ (-(n & 0x01U) & 0xB400U);
+ 306:	bc 01       	movw	r22, r24
+ 308:	61 70       	andi	r22, 0x01	; 1
+ 30a:	77 27       	eor	r23, r23
+ 30c:	71 95       	neg	r23
+ 30e:	61 95       	neg	r22
+ 310:	71 09       	sbc	r23, r1
+ 312:	66 27       	eor	r22, r22
+ 314:	74 7b       	andi	r23, 0xB4	; 180
+ 316:	96 95       	lsr	r25
+ 318:	87 95       	ror	r24
+ 31a:	68 27       	eor	r22, r24
+ 31c:	79 27       	eor	r23, r25
+random_init():
+/home/vasia/projects/VasSnow/software/sketch/random.ino:13
+}
+
+void random_init(uint16_t seed)
+{
+  random_number = lfsr16_next(eeprom_read_word((uint16_t *)RANDOM_SEED_ADDRESS) ^ seed);
+ 31e:	70 93 8e 00 	sts	0x008E, r23	; 0x80008e <random_number+0x1>
+ 322:	60 93 8d 00 	sts	0x008D, r22	; 0x80008d <random_number>
+/home/vasia/projects/VasSnow/software/sketch/random.ino:14
+  eeprom_write_word((uint16_t *)0, random_number);
+ 326:	90 e0       	ldi	r25, 0x00	; 0
+ 328:	80 e0       	ldi	r24, 0x00	; 0
+ 32a:	37 d4       	rcall	.+2158   	; 0xb9a <eeprom_write_word>
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+  PORTB |= 0b00000010;
+  PORTB &= 0b11111110;
+  millis += 2;
+}
+void set_br(byte br) {
+  OCR0A = 0xFF - br;
+ 32c:	6b e9       	ldi	r22, 0x9B	; 155
+ 32e:	76 2e       	mov	r7, r22
+ 330:	76 e0       	ldi	r23, 0x06	; 6
+ 332:	47 2e       	mov	r4, r23
+ 334:	51 2c       	mov	r5, r1
+ray_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:186
+
+}
+void ray_m(int del, int counter) {
+  clear();
+  set_br(std_br);
+  counter %= 3;
+ 336:	e3 e0       	ldi	r30, 0x03	; 3
+ 338:	2e 2e       	mov	r2, r30
+ 33a:	31 2c       	mov	r3, r1
+mange_effects():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:65
+      leds[i][j] = 1;
+    }
+  }
+}
+void mange_effects() {
+  if (((millis - prev_millis) > 5000) && AUTOCHANGE) {
+ 33c:	40 91 93 00 	lds	r20, 0x0093	; 0x800093 <millis>
+ 340:	50 91 94 00 	lds	r21, 0x0094	; 0x800094 <millis+0x1>
+ 344:	60 91 95 00 	lds	r22, 0x0095	; 0x800095 <millis+0x2>
+ 348:	70 91 96 00 	lds	r23, 0x0096	; 0x800096 <millis+0x3>
+ 34c:	80 91 8f 00 	lds	r24, 0x008F	; 0x80008f <prev_millis>
+ 350:	90 91 90 00 	lds	r25, 0x0090	; 0x800090 <prev_millis+0x1>
+ 354:	a0 91 91 00 	lds	r26, 0x0091	; 0x800091 <prev_millis+0x2>
+ 358:	b0 91 92 00 	lds	r27, 0x0092	; 0x800092 <prev_millis+0x3>
+ 35c:	e0 91 98 00 	lds	r30, 0x0098	; 0x800098 <effect_num>
+ 360:	f0 91 99 00 	lds	r31, 0x0099	; 0x800099 <effect_num+0x1>
+ 364:	8a 01       	movw	r16, r20
+ 366:	9b 01       	movw	r18, r22
+ 368:	08 1b       	sub	r16, r24
+ 36a:	19 0b       	sbc	r17, r25
+ 36c:	2a 0b       	sbc	r18, r26
+ 36e:	3b 0b       	sbc	r19, r27
+ 370:	09 38       	cpi	r16, 0x89	; 137
+ 372:	13 41       	sbci	r17, 0x13	; 19
+ 374:	21 05       	cpc	r18, r1
+ 376:	31 05       	cpc	r19, r1
+ 378:	30 f0       	brcs	.+12     	; 0x386 <main+0xfc>
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:67
+    prev_millis = millis;
+    effect_num++;
+ 37a:	31 96       	adiw	r30, 0x01	; 1
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:66
+    }
+  }
+}
+void mange_effects() {
+  if (((millis - prev_millis) > 5000) && AUTOCHANGE) {
+    prev_millis = millis;
+ 37c:	db 01       	movw	r26, r22
+ 37e:	ca 01       	movw	r24, r20
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:68
+    effect_num++;
+    if (effect_num >= EFFECTS_Q) {
+ 380:	e8 30       	cpi	r30, 0x08	; 8
+ 382:	f1 05       	cpc	r31, r1
+ 384:	74 f4       	brge	.+28     	; 0x3a2 <main+0x118>
+loop():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:91
+
+}
+
+void loop() {
+  mange_effects();
+  switch (effect_num) {
+ 386:	e8 30       	cpi	r30, 0x08	; 8
+ 388:	f1 05       	cpc	r31, r1
+ 38a:	60 f7       	brcc	.-40     	; 0x364 <main+0xda>
+ 38c:	e7 53       	subi	r30, 0x37	; 55
+ 38e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 390:	09 94       	ijmp
+ 392:	07 c0       	rjmp	.+14     	; 0x3a2 <main+0x118>
+ 394:	49 c0       	rjmp	.+146    	; 0x428 <__LOCK_REGION_LENGTH__+0x28>
+ 396:	a2 c0       	rjmp	.+324    	; 0x4dc <__LOCK_REGION_LENGTH__+0xdc>
+ 398:	d0 c0       	rjmp	.+416    	; 0x53a <__LOCK_REGION_LENGTH__+0x13a>
+ 39a:	47 c1       	rjmp	.+654    	; 0x62a <__LOCK_REGION_LENGTH__+0x22a>
+ 39c:	be c1       	rjmp	.+892    	; 0x71a <__LOCK_REGION_LENGTH__+0x31a>
+ 39e:	57 c2       	rjmp	.+1198   	; 0x84e <__LOCK_REGION_LENGTH__+0x44e>
+ 3a0:	62 c3       	rjmp	.+1732   	; 0xa66 <__LOCK_REGION_LENGTH__+0x666>
+ 3a2:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <prev_millis>
+ 3a6:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <prev_millis+0x1>
+ 3aa:	a0 93 91 00 	sts	0x0091, r26	; 0x800091 <prev_millis+0x2>
+ 3ae:	b0 93 92 00 	sts	0x0092, r27	; 0x800092 <prev_millis+0x3>
+ 3b2:	10 92 99 00 	sts	0x0099, r1	; 0x800099 <effect_num+0x1>
+ 3b6:	10 92 98 00 	sts	0x0098, r1	; 0x800098 <effect_num>
+breath():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:2
+void breath(int del) {
+  clear();
+ 3ba:	ca de       	rcall	.-620    	; 0x150 <clear()>
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+  PORTB |= 0b00000010;
+  PORTB &= 0b11111110;
+  millis += 2;
+}
+void set_br(byte br) {
+  OCR0A = 0xFF - br;
+ 3bc:	76 be       	out	0x36, r7	; 54
+breath():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:4
+  set_br(std_br);
+  delay(del);
+ 3be:	68 ec       	ldi	r22, 0xC8	; 200
+ 3c0:	70 e0       	ldi	r23, 0x00	; 0
+ 3c2:	80 e0       	ldi	r24, 0x00	; 0
+ 3c4:	90 e0       	ldi	r25, 0x00	; 0
+ 3c6:	a3 de       	rcall	.-698    	; 0x10e <delay>
+ 3c8:	c0 e6       	ldi	r28, 0x60	; 96
+ 3ca:	d0 e0       	ldi	r29, 0x00	; 0
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:5
+  for (int i = 0; i < ANODES_Q; i++) {
+ 3cc:	10 e0       	ldi	r17, 0x00	; 0
+ 3ce:	00 e0       	ldi	r16, 0x00	; 0
+breath():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:7
+    for (int j = 0; j < CATHODES_Q; j++) {
+      leds[j][i] = 1;
+ 3d0:	ff 24       	eor	r15, r15
+ 3d2:	f3 94       	inc	r15
+ 3d4:	f9 92       	st	Y+, r15
+ 3d6:	fb 82       	std	Y+3, r15	; 0x03
+ 3d8:	ff 82       	std	Y+7, r15	; 0x07
+ 3da:	fb 86       	std	Y+11, r15	; 0x0b
+ 3dc:	ff 86       	std	Y+15, r15	; 0x0f
+ 3de:	fb 8a       	std	Y+19, r15	; 0x13
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:9
+    }
+    if (i != 1) delay(del);
+ 3e0:	01 30       	cpi	r16, 0x01	; 1
+ 3e2:	11 05       	cpc	r17, r1
+ 3e4:	29 f0       	breq	.+10     	; 0x3f0 <main+0x166>
+ 3e6:	68 ec       	ldi	r22, 0xC8	; 200
+ 3e8:	70 e0       	ldi	r23, 0x00	; 0
+ 3ea:	80 e0       	ldi	r24, 0x00	; 0
+ 3ec:	90 e0       	ldi	r25, 0x00	; 0
+ 3ee:	8f de       	rcall	.-738    	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:5
+void breath(int del) {
+  clear();
+  set_br(std_br);
+  delay(del);
+  for (int i = 0; i < ANODES_Q; i++) {
+ 3f0:	0f 5f       	subi	r16, 0xFF	; 255
+ 3f2:	1f 4f       	sbci	r17, 0xFF	; 255
+ 3f4:	04 30       	cpi	r16, 0x04	; 4
+ 3f6:	11 05       	cpc	r17, r1
+ 3f8:	69 f7       	brne	.-38     	; 0x3d4 <main+0x14a>
+ 3fa:	c4 e6       	ldi	r28, 0x64	; 100
+ 3fc:	d0 e0       	ldi	r29, 0x00	; 0
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:13
+    }
+    if (i != 1) delay(del);
+  }
+  for (int i = ANODES_Q - 1; i >= 0; i--) {
+    for (int j = 0; j < CATHODES_Q; j++) {
+      leds[j][i] = 0;
+ 3fe:	1a 92       	st	-Y, r1
+ 400:	1c 82       	std	Y+4, r1	; 0x04
+ 402:	18 86       	std	Y+8, r1	; 0x08
+ 404:	1c 86       	std	Y+12, r1	; 0x0c
+ 406:	18 8a       	std	Y+16, r1	; 0x10
+ 408:	1c 8a       	std	Y+20, r1	; 0x14
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:15
+    }
+    if (i != 2) delay(del);
+ 40a:	e0 e0       	ldi	r30, 0x00	; 0
+ 40c:	c2 36       	cpi	r28, 0x62	; 98
+ 40e:	de 07       	cpc	r29, r30
+ 410:	29 f0       	breq	.+10     	; 0x41c <__LOCK_REGION_LENGTH__+0x1c>
+ 412:	68 ec       	ldi	r22, 0xC8	; 200
+ 414:	70 e0       	ldi	r23, 0x00	; 0
+ 416:	80 e0       	ldi	r24, 0x00	; 0
+ 418:	90 e0       	ldi	r25, 0x00	; 0
+ 41a:	79 de       	rcall	.-782    	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:11
+    for (int j = 0; j < CATHODES_Q; j++) {
+      leds[j][i] = 1;
+    }
+    if (i != 1) delay(del);
+  }
+  for (int i = ANODES_Q - 1; i >= 0; i--) {
+ 41c:	80 e6       	ldi	r24, 0x60	; 96
+ 41e:	90 e0       	ldi	r25, 0x00	; 0
+ 420:	8c 17       	cp	r24, r28
+ 422:	9d 07       	cpc	r25, r29
+ 424:	61 f7       	brne	.-40     	; 0x3fe <main+0x174>
+ 426:	8a cf       	rjmp	.-236    	; 0x33c <main+0xb2>
+ 428:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <prev_millis>
+ 42c:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <prev_millis+0x1>
+ 430:	a0 93 91 00 	sts	0x0091, r26	; 0x800091 <prev_millis+0x2>
+ 434:	b0 93 92 00 	sts	0x0092, r27	; 0x800092 <prev_millis+0x3>
+ 438:	e1 e0       	ldi	r30, 0x01	; 1
+ 43a:	f0 e0       	ldi	r31, 0x00	; 0
+ 43c:	f0 93 99 00 	sts	0x0099, r31	; 0x800099 <effect_num+0x1>
+ 440:	e0 93 98 00 	sts	0x0098, r30	; 0x800098 <effect_num>
+round_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:19
+    }
+    if (i != 2) delay(del);
+  }
+}
+void round_m(int del) {
+  clear();
+ 444:	85 de       	rcall	.-758    	; 0x150 <clear()>
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 446:	76 be       	out	0x36, r7	; 54
+round_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:21
+  set_br(std_br);
+  delay(del);
+ 448:	66 e4       	ldi	r22, 0x46	; 70
+ 44a:	70 e0       	ldi	r23, 0x00	; 0
+ 44c:	80 e0       	ldi	r24, 0x00	; 0
+ 44e:	90 e0       	ldi	r25, 0x00	; 0
+ 450:	5e de       	rcall	.-836    	; 0x10e <delay>
+ 452:	c0 e6       	ldi	r28, 0x60	; 96
+ 454:	d0 e0       	ldi	r29, 0x00	; 0
+ 456:	8e 01       	movw	r16, r28
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:23
+  for (int i = 0; i < CATHODES_Q; i++) {
+    leds[i][0] = 1;
+ 458:	ff 24       	eor	r15, r15
+ 45a:	f3 94       	inc	r15
+ 45c:	f8 01       	movw	r30, r16
+ 45e:	f0 82       	st	Z, r15
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:24
+    delay(del);
+ 460:	66 e4       	ldi	r22, 0x46	; 70
+ 462:	70 e0       	ldi	r23, 0x00	; 0
+ 464:	80 e0       	ldi	r24, 0x00	; 0
+ 466:	90 e0       	ldi	r25, 0x00	; 0
+ 468:	52 de       	rcall	.-860    	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:25
+    leds[i][2] = 1;
+ 46a:	f8 01       	movw	r30, r16
+ 46c:	f2 82       	std	Z+2, r15	; 0x02
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:26
+    delay(del);
+ 46e:	66 e4       	ldi	r22, 0x46	; 70
+ 470:	70 e0       	ldi	r23, 0x00	; 0
+ 472:	80 e0       	ldi	r24, 0x00	; 0
+ 474:	90 e0       	ldi	r25, 0x00	; 0
+ 476:	4b de       	rcall	.-874    	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:27
+    leds[i][3] = 1;
+ 478:	f8 01       	movw	r30, r16
+ 47a:	f3 82       	std	Z+3, r15	; 0x03
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:28
+    delay(del);
+ 47c:	66 e4       	ldi	r22, 0x46	; 70
+ 47e:	70 e0       	ldi	r23, 0x00	; 0
+ 480:	80 e0       	ldi	r24, 0x00	; 0
+ 482:	90 e0       	ldi	r25, 0x00	; 0
+ 484:	44 de       	rcall	.-888    	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:29
+    leds[i][1] = 1;
+ 486:	f8 01       	movw	r30, r16
+ 488:	f1 82       	std	Z+1, r15	; 0x01
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:30
+    delay(del);
+ 48a:	66 e4       	ldi	r22, 0x46	; 70
+ 48c:	70 e0       	ldi	r23, 0x00	; 0
+ 48e:	80 e0       	ldi	r24, 0x00	; 0
+ 490:	90 e0       	ldi	r25, 0x00	; 0
+ 492:	3d de       	rcall	.-902    	; 0x10e <delay>
+ 494:	0c 5f       	subi	r16, 0xFC	; 252
+ 496:	1f 4f       	sbci	r17, 0xFF	; 255
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:22
+}
+void round_m(int del) {
+  clear();
+  set_br(std_br);
+  delay(del);
+  for (int i = 0; i < CATHODES_Q; i++) {
+ 498:	f0 e0       	ldi	r31, 0x00	; 0
+ 49a:	08 37       	cpi	r16, 0x78	; 120
+ 49c:	1f 07       	cpc	r17, r31
+ 49e:	f1 f6       	brne	.-68     	; 0x45c <__LOCK_REGION_LENGTH__+0x5c>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:33
+    delay(del);
+    leds[i][1] = 1;
+    delay(del);
+  }
+  for (int i = 0; i < CATHODES_Q; i++) {
+    leds[i][0] = 0;
+ 4a0:	18 82       	st	Y, r1
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:34
+    delay(del);
+ 4a2:	66 e4       	ldi	r22, 0x46	; 70
+ 4a4:	70 e0       	ldi	r23, 0x00	; 0
+ 4a6:	80 e0       	ldi	r24, 0x00	; 0
+ 4a8:	90 e0       	ldi	r25, 0x00	; 0
+ 4aa:	31 de       	rcall	.-926    	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:35
+    leds[i][2] = 0;
+ 4ac:	1a 82       	std	Y+2, r1	; 0x02
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:36
+    delay(del);
+ 4ae:	66 e4       	ldi	r22, 0x46	; 70
+ 4b0:	70 e0       	ldi	r23, 0x00	; 0
+ 4b2:	80 e0       	ldi	r24, 0x00	; 0
+ 4b4:	90 e0       	ldi	r25, 0x00	; 0
+ 4b6:	2b de       	rcall	.-938    	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:37
+    leds[i][3] = 0;
+ 4b8:	1b 82       	std	Y+3, r1	; 0x03
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:38
+    delay(del);
+ 4ba:	66 e4       	ldi	r22, 0x46	; 70
+ 4bc:	70 e0       	ldi	r23, 0x00	; 0
+ 4be:	80 e0       	ldi	r24, 0x00	; 0
+ 4c0:	90 e0       	ldi	r25, 0x00	; 0
+ 4c2:	25 de       	rcall	.-950    	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:39
+    leds[i][1] = 0;
+ 4c4:	19 82       	std	Y+1, r1	; 0x01
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:40
+    delay(del);
+ 4c6:	66 e4       	ldi	r22, 0x46	; 70
+ 4c8:	70 e0       	ldi	r23, 0x00	; 0
+ 4ca:	80 e0       	ldi	r24, 0x00	; 0
+ 4cc:	90 e0       	ldi	r25, 0x00	; 0
+ 4ce:	1f de       	rcall	.-962    	; 0x10e <delay>
+ 4d0:	24 96       	adiw	r28, 0x04	; 4
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:32
+    leds[i][3] = 1;
+    delay(del);
+    leds[i][1] = 1;
+    delay(del);
+  }
+  for (int i = 0; i < CATHODES_Q; i++) {
+ 4d2:	20 e0       	ldi	r18, 0x00	; 0
+ 4d4:	c8 37       	cpi	r28, 0x78	; 120
+ 4d6:	d2 07       	cpc	r29, r18
+ 4d8:	19 f7       	brne	.-58     	; 0x4a0 <__LOCK_REGION_LENGTH__+0xa0>
+ 4da:	30 cf       	rjmp	.-416    	; 0x33c <main+0xb2>
+ 4dc:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <prev_millis>
+ 4e0:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <prev_millis+0x1>
+ 4e4:	a0 93 91 00 	sts	0x0091, r26	; 0x800091 <prev_millis+0x2>
+ 4e8:	b0 93 92 00 	sts	0x0092, r27	; 0x800092 <prev_millis+0x3>
+ 4ec:	82 e0       	ldi	r24, 0x02	; 2
+ 4ee:	90 e0       	ldi	r25, 0x00	; 0
+ 4f0:	90 93 99 00 	sts	0x0099, r25	; 0x800099 <effect_num+0x1>
+ 4f4:	80 93 98 00 	sts	0x0098, r24	; 0x800098 <effect_num>
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 4f8:	81 e0       	ldi	r24, 0x01	; 1
+ 4fa:	86 bf       	out	0x36, r24	; 54
+ 4fc:	e0 e6       	ldi	r30, 0x60	; 96
+ 4fe:	f0 e0       	ldi	r31, 0x00	; 0
+ligth_all():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:60
+  }
+}
+void ligth_all() {
+  for (int i = 0; i < CATHODES_Q; i++) {
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 1;
+ 500:	80 83       	st	Z, r24
+ 502:	81 83       	std	Z+1, r24	; 0x01
+ 504:	82 83       	std	Z+2, r24	; 0x02
+ 506:	83 83       	std	Z+3, r24	; 0x03
+ 508:	34 96       	adiw	r30, 0x04	; 4
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:58
+      leds[i][j] = 0;
+    }
+  }
+}
+void ligth_all() {
+  for (int i = 0; i < CATHODES_Q; i++) {
+ 50a:	90 e0       	ldi	r25, 0x00	; 0
+ 50c:	e8 37       	cpi	r30, 0x78	; 120
+ 50e:	f9 07       	cpc	r31, r25
+ 510:	b9 f7       	brne	.-18     	; 0x500 <__LOCK_REGION_LENGTH__+0x100>
+ 512:	c1 e0       	ldi	r28, 0x01	; 1
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+  PORTB |= 0b00000010;
+  PORTB &= 0b11111110;
+  millis += 2;
+}
+void set_br(byte br) {
+  OCR0A = 0xFF - br;
+ 514:	c6 bf       	out	0x36, r28	; 54
+breath2():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:49
+void breath2(int fade_del) {
+  set_br(MAX_BR);
+  ligth_all();
+  for (int i = MAX_BR; i >= MIN_BR; i--) {
+    set_br(i);
+    delay(fade_del);
+ 516:	68 e0       	ldi	r22, 0x08	; 8
+ 518:	70 e0       	ldi	r23, 0x00	; 0
+ 51a:	80 e0       	ldi	r24, 0x00	; 0
+ 51c:	90 e0       	ldi	r25, 0x00	; 0
+ 51e:	f7 dd       	rcall	.-1042   	; 0x10e <delay>
+ 520:	cf 5f       	subi	r28, 0xFF	; 255
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:47
+}
+
+void breath2(int fade_del) {
+  set_br(MAX_BR);
+  ligth_all();
+  for (int i = MAX_BR; i >= MIN_BR; i--) {
+ 522:	cf 3f       	cpi	r28, 0xFF	; 255
+ 524:	b9 f7       	brne	.-18     	; 0x514 <__LOCK_REGION_LENGTH__+0x114>
+ 526:	ce ef       	ldi	r28, 0xFE	; 254
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 528:	c6 bf       	out	0x36, r28	; 54
+breath2():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:53
+    set_br(i);
+    delay(fade_del);
+  }
+  for (int i = MIN_BR; i <= MAX_BR; i++) {
+    set_br(i);
+    delay(fade_del);
+ 52a:	68 e0       	ldi	r22, 0x08	; 8
+ 52c:	70 e0       	ldi	r23, 0x00	; 0
+ 52e:	80 e0       	ldi	r24, 0x00	; 0
+ 530:	90 e0       	ldi	r25, 0x00	; 0
+ 532:	ed dd       	rcall	.-1062   	; 0x10e <delay>
+ 534:	c1 50       	subi	r28, 0x01	; 1
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:51
+  ligth_all();
+  for (int i = MAX_BR; i >= MIN_BR; i--) {
+    set_br(i);
+    delay(fade_del);
+  }
+  for (int i = MIN_BR; i <= MAX_BR; i++) {
+ 536:	c1 f7       	brne	.-16     	; 0x528 <__LOCK_REGION_LENGTH__+0x128>
+ 538:	01 cf       	rjmp	.-510    	; 0x33c <main+0xb2>
+ 53a:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <prev_millis>
+ 53e:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <prev_millis+0x1>
+ 542:	a0 93 91 00 	sts	0x0091, r26	; 0x800091 <prev_millis+0x2>
+ 546:	b0 93 92 00 	sts	0x0092, r27	; 0x800092 <prev_millis+0x3>
+ 54a:	30 92 99 00 	sts	0x0099, r3	; 0x800099 <effect_num+0x1>
+ 54e:	20 92 98 00 	sts	0x0098, r2	; 0x800098 <effect_num>
+round2_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:57
+    set_br(i);
+    delay(fade_del);
+  }
+}
+void round2_m(int del) {
+  clear();
+ 552:	fe dd       	rcall	.-1028   	; 0x150 <clear()>
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 554:	76 be       	out	0x36, r7	; 54
+round2_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:59
+  set_br(std_br);
+  delay(del);
+ 556:	66 e4       	ldi	r22, 0x46	; 70
+ 558:	70 e0       	ldi	r23, 0x00	; 0
+ 55a:	80 e0       	ldi	r24, 0x00	; 0
+ 55c:	90 e0       	ldi	r25, 0x00	; 0
+ 55e:	d7 dd       	rcall	.-1106   	; 0x10e <delay>
+ 560:	40 e6       	ldi	r20, 0x60	; 96
+ 562:	e4 2e       	mov	r14, r20
+ 564:	40 e0       	ldi	r20, 0x00	; 0
+ 566:	f4 2e       	mov	r15, r20
+ 568:	87 01       	movw	r16, r14
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:61
+  for (int i = 0; i < CATHODES_Q; i++) {
+    leds[i][0] = 1;
+ 56a:	c1 e0       	ldi	r28, 0x01	; 1
+ 56c:	f8 01       	movw	r30, r16
+ 56e:	c0 83       	st	Z, r28
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:62
+    delay(del);
+ 570:	66 e4       	ldi	r22, 0x46	; 70
+ 572:	70 e0       	ldi	r23, 0x00	; 0
+ 574:	80 e0       	ldi	r24, 0x00	; 0
+ 576:	90 e0       	ldi	r25, 0x00	; 0
+ 578:	ca dd       	rcall	.-1132   	; 0x10e <delay>
+ 57a:	0c 5f       	subi	r16, 0xFC	; 252
+ 57c:	1f 4f       	sbci	r17, 0xFF	; 255
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:60
+}
+void round2_m(int del) {
+  clear();
+  set_br(std_br);
+  delay(del);
+  for (int i = 0; i < CATHODES_Q; i++) {
+ 57e:	f0 e0       	ldi	r31, 0x00	; 0
+ 580:	08 37       	cpi	r16, 0x78	; 120
+ 582:	1f 07       	cpc	r17, r31
+ 584:	99 f7       	brne	.-26     	; 0x56c <__LOCK_REGION_LENGTH__+0x16c>
+ 586:	c0 e6       	ldi	r28, 0x60	; 96
+ 588:	d0 e0       	ldi	r29, 0x00	; 0
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:65
+    leds[i][0] = 1;
+    delay(del);
+  }
+  for (int i = 0; i < CATHODES_Q; i++) {
+    leds[i][2] = 1;
+ 58a:	dd 24       	eor	r13, r13
+ 58c:	d3 94       	inc	r13
+ 58e:	da 82       	std	Y+2, r13	; 0x02
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:66
+    leds[i][1] = 1;
+ 590:	d9 82       	std	Y+1, r13	; 0x01
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:67
+    delay(del);
+ 592:	66 e4       	ldi	r22, 0x46	; 70
+ 594:	70 e0       	ldi	r23, 0x00	; 0
+ 596:	80 e0       	ldi	r24, 0x00	; 0
+ 598:	90 e0       	ldi	r25, 0x00	; 0
+ 59a:	b9 dd       	rcall	.-1166   	; 0x10e <delay>
+ 59c:	24 96       	adiw	r28, 0x04	; 4
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:64
+  delay(del);
+  for (int i = 0; i < CATHODES_Q; i++) {
+    leds[i][0] = 1;
+    delay(del);
+  }
+  for (int i = 0; i < CATHODES_Q; i++) {
+ 59e:	0c 17       	cp	r16, r28
+ 5a0:	1d 07       	cpc	r17, r29
+ 5a2:	a9 f7       	brne	.-22     	; 0x58e <__LOCK_REGION_LENGTH__+0x18e>
+ 5a4:	00 e6       	ldi	r16, 0x60	; 96
+ 5a6:	10 e0       	ldi	r17, 0x00	; 0
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:70
+    leds[i][2] = 1;
+    leds[i][1] = 1;
+    delay(del);
+  }
+  for (int i = 0; i < CATHODES_Q; i++) {
+    leds[i][3] = 1;
+ 5a8:	dd 24       	eor	r13, r13
+ 5aa:	d3 94       	inc	r13
+ 5ac:	f8 01       	movw	r30, r16
+ 5ae:	d3 82       	std	Z+3, r13	; 0x03
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:71
+    delay(del);
+ 5b0:	66 e4       	ldi	r22, 0x46	; 70
+ 5b2:	70 e0       	ldi	r23, 0x00	; 0
+ 5b4:	80 e0       	ldi	r24, 0x00	; 0
+ 5b6:	90 e0       	ldi	r25, 0x00	; 0
+ 5b8:	aa dd       	rcall	.-1196   	; 0x10e <delay>
+ 5ba:	0c 5f       	subi	r16, 0xFC	; 252
+ 5bc:	1f 4f       	sbci	r17, 0xFF	; 255
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:69
+  for (int i = 0; i < CATHODES_Q; i++) {
+    leds[i][2] = 1;
+    leds[i][1] = 1;
+    delay(del);
+  }
+  for (int i = 0; i < CATHODES_Q; i++) {
+ 5be:	0c 17       	cp	r16, r28
+ 5c0:	1d 07       	cpc	r17, r29
+ 5c2:	a1 f7       	brne	.-24     	; 0x5ac <__LOCK_REGION_LENGTH__+0x1ac>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:73
+    leds[i][3] = 1;
+    delay(del);
+  }
+  delay(del * 5);
+ 5c4:	6e e5       	ldi	r22, 0x5E	; 94
+ 5c6:	71 e0       	ldi	r23, 0x01	; 1
+ 5c8:	80 e0       	ldi	r24, 0x00	; 0
+ 5ca:	90 e0       	ldi	r25, 0x00	; 0
+ 5cc:	a0 dd       	rcall	.-1216   	; 0x10e <delay>
+ 5ce:	c0 e6       	ldi	r28, 0x60	; 96
+ 5d0:	d0 e0       	ldi	r29, 0x00	; 0
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:76
+  ///
+  for (int i = CATHODES_Q - 1; i >= 0; i--) {
+    leds[i][3] = 0;
+ 5d2:	1f 8a       	std	Y+23, r1	; 0x17
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:77
+    delay(del);
+ 5d4:	66 e4       	ldi	r22, 0x46	; 70
+ 5d6:	70 e0       	ldi	r23, 0x00	; 0
+ 5d8:	80 e0       	ldi	r24, 0x00	; 0
+ 5da:	90 e0       	ldi	r25, 0x00	; 0
+ 5dc:	98 dd       	rcall	.-1232   	; 0x10e <delay>
+ 5de:	24 97       	sbiw	r28, 0x04	; 4
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:75
+    leds[i][3] = 1;
+    delay(del);
+  }
+  delay(del * 5);
+  ///
+  for (int i = CATHODES_Q - 1; i >= 0; i--) {
+ 5e0:	f0 e0       	ldi	r31, 0x00	; 0
+ 5e2:	c8 34       	cpi	r28, 0x48	; 72
+ 5e4:	df 07       	cpc	r29, r31
+ 5e6:	a9 f7       	brne	.-22     	; 0x5d2 <__LOCK_REGION_LENGTH__+0x1d2>
+ 5e8:	c0 e6       	ldi	r28, 0x60	; 96
+ 5ea:	d0 e0       	ldi	r29, 0x00	; 0
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:80
+    leds[i][3] = 0;
+    delay(del);
+  }
+  for (int i = CATHODES_Q - 1; i >= 0; i--) {
+    leds[i][1] = 0;
+ 5ec:	1d 8a       	std	Y+21, r1	; 0x15
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:81
+    leds[i][2] = 0;
+ 5ee:	1e 8a       	std	Y+22, r1	; 0x16
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:82
+    delay(del);
+ 5f0:	66 e4       	ldi	r22, 0x46	; 70
+ 5f2:	70 e0       	ldi	r23, 0x00	; 0
+ 5f4:	80 e0       	ldi	r24, 0x00	; 0
+ 5f6:	90 e0       	ldi	r25, 0x00	; 0
+ 5f8:	8a dd       	rcall	.-1260   	; 0x10e <delay>
+ 5fa:	24 97       	sbiw	r28, 0x04	; 4
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:79
+  ///
+  for (int i = CATHODES_Q - 1; i >= 0; i--) {
+    leds[i][3] = 0;
+    delay(del);
+  }
+  for (int i = CATHODES_Q - 1; i >= 0; i--) {
+ 5fc:	20 e0       	ldi	r18, 0x00	; 0
+ 5fe:	c8 34       	cpi	r28, 0x48	; 72
+ 600:	d2 07       	cpc	r29, r18
+ 602:	a1 f7       	brne	.-24     	; 0x5ec <__LOCK_REGION_LENGTH__+0x1ec>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:85
+    leds[i][1] = 0;
+    leds[i][2] = 0;
+    delay(del);
+  }
+  for (int i = CATHODES_Q - 1; i >= 0; i--) {
+    leds[i][0] = 0;
+ 604:	f7 01       	movw	r30, r14
+ 606:	14 8a       	std	Z+20, r1	; 0x14
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:86
+    delay(del);
+ 608:	66 e4       	ldi	r22, 0x46	; 70
+ 60a:	70 e0       	ldi	r23, 0x00	; 0
+ 60c:	80 e0       	ldi	r24, 0x00	; 0
+ 60e:	90 e0       	ldi	r25, 0x00	; 0
+ 610:	7e dd       	rcall	.-1284   	; 0x10e <delay>
+ 612:	f4 e0       	ldi	r31, 0x04	; 4
+ 614:	ef 1a       	sub	r14, r31
+ 616:	f1 08       	sbc	r15, r1
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:84
+  for (int i = CATHODES_Q - 1; i >= 0; i--) {
+    leds[i][1] = 0;
+    leds[i][2] = 0;
+    delay(del);
+  }
+  for (int i = CATHODES_Q - 1; i >= 0; i--) {
+ 618:	ce 15       	cp	r28, r14
+ 61a:	df 05       	cpc	r29, r15
+ 61c:	99 f7       	brne	.-26     	; 0x604 <__LOCK_REGION_LENGTH__+0x204>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:88
+    leds[i][0] = 0;
+    delay(del);
+  }
+  delay(del * 5);
+ 61e:	6e e5       	ldi	r22, 0x5E	; 94
+ 620:	71 e0       	ldi	r23, 0x01	; 1
+ 622:	80 e0       	ldi	r24, 0x00	; 0
+ 624:	90 e0       	ldi	r25, 0x00	; 0
+round3_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:267
+      leds[5-((i) / 2)][3] = 0;
+    }
+    else leds[5-((i) / 2)][1] = 0;
+    delay(del);
+  }
+  delay(del * 2);
+ 626:	73 dd       	rcall	.-1306   	; 0x10e <delay>
+ 628:	89 ce       	rjmp	.-750    	; 0x33c <main+0xb2>
+ 62a:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <prev_millis>
+ 62e:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <prev_millis+0x1>
+ 632:	a0 93 91 00 	sts	0x0091, r26	; 0x800091 <prev_millis+0x2>
+ 636:	b0 93 92 00 	sts	0x0092, r27	; 0x800092 <prev_millis+0x3>
+ 63a:	84 e0       	ldi	r24, 0x04	; 4
+ 63c:	90 e0       	ldi	r25, 0x00	; 0
+ 63e:	90 93 99 00 	sts	0x0099, r25	; 0x800099 <effect_num+0x1>
+ 642:	80 93 98 00 	sts	0x0098, r24	; 0x800098 <effect_num>
+random_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:91
+    delay(del);
+  }
+  delay(del * 5);
+}
+void random_m(int del) {
+  clear();
+ 646:	84 dd       	rcall	.-1272   	; 0x150 <clear()>
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 648:	76 be       	out	0x36, r7	; 54
+random_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:98
+  while (true) {
+    int cathode = random_f() % CATHODES_Q;
+    int anode = random_f() % ANODES_Q;
+    boolean filled = true;
+    if (leds[cathode][anode] == 0) {
+      leds[cathode][anode] = 1;
+ 64a:	ee 24       	eor	r14, r14
+ 64c:	e3 94       	inc	r14
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:94
+}
+void random_m(int del) {
+  clear();
+  set_br(std_br);
+  while (true) {
+    int cathode = random_f() % CATHODES_Q;
+ 64e:	6b dd       	rcall	.-1322   	; 0x126 <random_f()>
+ 650:	b2 01       	movw	r22, r4
+ 652:	d5 d2       	rcall	.+1450   	; 0xbfe <__udivmodhi4>
+ 654:	ec 01       	movw	r28, r24
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:95
+    int anode = random_f() % ANODES_Q;
+ 656:	67 dd       	rcall	.-1330   	; 0x126 <random_f()>
+ 658:	83 70       	andi	r24, 0x03	; 3
+ 65a:	99 27       	eor	r25, r25
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:97
+    boolean filled = true;
+    if (leds[cathode][anode] == 0) {
+ 65c:	cc 0f       	add	r28, r28
+ 65e:	dd 1f       	adc	r29, r29
+ 660:	cc 0f       	add	r28, r28
+ 662:	dd 1f       	adc	r29, r29
+ 664:	c0 5a       	subi	r28, 0xA0	; 160
+ 666:	df 4f       	sbci	r29, 0xFF	; 255
+ 668:	c8 0f       	add	r28, r24
+ 66a:	d9 1f       	adc	r29, r25
+ 66c:	88 81       	ld	r24, Y
+ 66e:	81 11       	cpse	r24, r1
+ 670:	06 c0       	rjmp	.+12     	; 0x67e <__LOCK_REGION_LENGTH__+0x27e>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:98
+      leds[cathode][anode] = 1;
+ 672:	e8 82       	st	Y, r14
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:99
+      delay(del);
+ 674:	66 e4       	ldi	r22, 0x46	; 70
+ 676:	70 e0       	ldi	r23, 0x00	; 0
+ 678:	80 e0       	ldi	r24, 0x00	; 0
+ 67a:	90 e0       	ldi	r25, 0x00	; 0
+ 67c:	48 dd       	rcall	.-1392   	; 0x10e <delay>
+round2_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:75
+    leds[i][3] = 1;
+    delay(del);
+  }
+  delay(del * 5);
+  ///
+  for (int i = CATHODES_Q - 1; i >= 0; i--) {
+ 67e:	00 e6       	ldi	r16, 0x60	; 96
+ 680:	10 e0       	ldi	r17, 0x00	; 0
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:96
+  clear();
+  set_br(std_br);
+  while (true) {
+    int cathode = random_f() % CATHODES_Q;
+    int anode = random_f() % ANODES_Q;
+    boolean filled = true;
+ 682:	ff 24       	eor	r15, r15
+ 684:	f3 94       	inc	r15
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:102
+    if (leds[cathode][anode] == 0) {
+      leds[cathode][anode] = 1;
+      delay(del);
+    }
+    for (int i = 0; i < CATHODES_Q; i++) {
+      for (int j = 0; j < ANODES_Q; j++) {
+ 686:	90 e0       	ldi	r25, 0x00	; 0
+ 688:	80 e0       	ldi	r24, 0x00	; 0
+random_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:103
+        if (leds[i][j] == 0) filled = false;
+ 68a:	f8 01       	movw	r30, r16
+ 68c:	e8 0f       	add	r30, r24
+ 68e:	f9 1f       	adc	r31, r25
+ 690:	20 81       	ld	r18, Z
+ 692:	21 11       	cpse	r18, r1
+ 694:	01 c0       	rjmp	.+2      	; 0x698 <__LOCK_REGION_LENGTH__+0x298>
+main():
+ 696:	f1 2c       	mov	r15, r1
+random_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:102
+    if (leds[cathode][anode] == 0) {
+      leds[cathode][anode] = 1;
+      delay(del);
+    }
+    for (int i = 0; i < CATHODES_Q; i++) {
+      for (int j = 0; j < ANODES_Q; j++) {
+ 698:	01 96       	adiw	r24, 0x01	; 1
+ 69a:	84 30       	cpi	r24, 0x04	; 4
+ 69c:	91 05       	cpc	r25, r1
+ 69e:	a9 f7       	brne	.-22     	; 0x68a <__LOCK_REGION_LENGTH__+0x28a>
+ 6a0:	0c 5f       	subi	r16, 0xFC	; 252
+ 6a2:	1f 4f       	sbci	r17, 0xFF	; 255
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:101
+    boolean filled = true;
+    if (leds[cathode][anode] == 0) {
+      leds[cathode][anode] = 1;
+      delay(del);
+    }
+    for (int i = 0; i < CATHODES_Q; i++) {
+ 6a4:	90 e0       	ldi	r25, 0x00	; 0
+ 6a6:	08 37       	cpi	r16, 0x78	; 120
+ 6a8:	19 07       	cpc	r17, r25
+ 6aa:	69 f7       	brne	.-38     	; 0x686 <__LOCK_REGION_LENGTH__+0x286>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:106
+      for (int j = 0; j < ANODES_Q; j++) {
+        if (leds[i][j] == 0) filled = false;
+      }
+    }
+    if (filled) {
+ 6ac:	ff 20       	and	r15, r15
+ 6ae:	79 f2       	breq	.-98     	; 0x64e <__LOCK_REGION_LENGTH__+0x24e>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:107
+      delay(del * 5);
+ 6b0:	6e e5       	ldi	r22, 0x5E	; 94
+ 6b2:	71 e0       	ldi	r23, 0x01	; 1
+ 6b4:	80 e0       	ldi	r24, 0x00	; 0
+ 6b6:	90 e0       	ldi	r25, 0x00	; 0
+ 6b8:	2a dd       	rcall	.-1452   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:113
+      break;
+    }
+  }
+  //////
+  while (true) {
+    int cathode = random_f() % CATHODES_Q;
+ 6ba:	35 dd       	rcall	.-1430   	; 0x126 <random_f()>
+ 6bc:	b2 01       	movw	r22, r4
+ 6be:	9f d2       	rcall	.+1342   	; 0xbfe <__udivmodhi4>
+ 6c0:	ec 01       	movw	r28, r24
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:114
+    int anode = random_f() % ANODES_Q;
+ 6c2:	31 dd       	rcall	.-1438   	; 0x126 <random_f()>
+ 6c4:	83 70       	andi	r24, 0x03	; 3
+ 6c6:	99 27       	eor	r25, r25
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:116
+    boolean filled = false;
+    if (leds[cathode][anode] == 1) {
+ 6c8:	cc 0f       	add	r28, r28
+ 6ca:	dd 1f       	adc	r29, r29
+ 6cc:	cc 0f       	add	r28, r28
+ 6ce:	dd 1f       	adc	r29, r29
+ 6d0:	c0 5a       	subi	r28, 0xA0	; 160
+ 6d2:	df 4f       	sbci	r29, 0xFF	; 255
+ 6d4:	c8 0f       	add	r28, r24
+ 6d6:	d9 1f       	adc	r29, r25
+ 6d8:	88 81       	ld	r24, Y
+ 6da:	81 30       	cpi	r24, 0x01	; 1
+ 6dc:	31 f4       	brne	.+12     	; 0x6ea <__LOCK_REGION_LENGTH__+0x2ea>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:117
+      leds[cathode][anode] = 0;
+ 6de:	18 82       	st	Y, r1
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:118
+      delay(del);
+ 6e0:	66 e4       	ldi	r22, 0x46	; 70
+ 6e2:	70 e0       	ldi	r23, 0x00	; 0
+ 6e4:	80 e0       	ldi	r24, 0x00	; 0
+ 6e6:	90 e0       	ldi	r25, 0x00	; 0
+ 6e8:	12 dd       	rcall	.-1500   	; 0x10e <delay>
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:103
+      leds[cathode][anode] = 1;
+      delay(del);
+    }
+    for (int i = 0; i < CATHODES_Q; i++) {
+      for (int j = 0; j < ANODES_Q; j++) {
+        if (leds[i][j] == 0) filled = false;
+ 6ea:	80 e6       	ldi	r24, 0x60	; 96
+ 6ec:	90 e0       	ldi	r25, 0x00	; 0
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:115
+  }
+  //////
+  while (true) {
+    int cathode = random_f() % CATHODES_Q;
+    int anode = random_f() % ANODES_Q;
+    boolean filled = false;
+ 6ee:	40 e0       	ldi	r20, 0x00	; 0
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:121
+    if (leds[cathode][anode] == 1) {
+      leds[cathode][anode] = 0;
+      delay(del);
+    }
+    for (int i = 0; i < CATHODES_Q; i++) {
+      for (int j = 0; j < ANODES_Q; j++) {
+ 6f0:	30 e0       	ldi	r19, 0x00	; 0
+ 6f2:	20 e0       	ldi	r18, 0x00	; 0
+random_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:122
+        if (leds[i][j] == 1) filled = true;
+ 6f4:	fc 01       	movw	r30, r24
+ 6f6:	e2 0f       	add	r30, r18
+ 6f8:	f3 1f       	adc	r31, r19
+ 6fa:	50 81       	ld	r21, Z
+ 6fc:	51 30       	cpi	r21, 0x01	; 1
+ 6fe:	09 f4       	brne	.+2      	; 0x702 <__LOCK_REGION_LENGTH__+0x302>
+main():
+ 700:	4f 2d       	mov	r20, r15
+random_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:121
+    if (leds[cathode][anode] == 1) {
+      leds[cathode][anode] = 0;
+      delay(del);
+    }
+    for (int i = 0; i < CATHODES_Q; i++) {
+      for (int j = 0; j < ANODES_Q; j++) {
+ 702:	2f 5f       	subi	r18, 0xFF	; 255
+ 704:	3f 4f       	sbci	r19, 0xFF	; 255
+ 706:	24 30       	cpi	r18, 0x04	; 4
+ 708:	31 05       	cpc	r19, r1
+ 70a:	a1 f7       	brne	.-24     	; 0x6f4 <__LOCK_REGION_LENGTH__+0x2f4>
+ 70c:	04 96       	adiw	r24, 0x04	; 4
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:120
+    boolean filled = false;
+    if (leds[cathode][anode] == 1) {
+      leds[cathode][anode] = 0;
+      delay(del);
+    }
+    for (int i = 0; i < CATHODES_Q; i++) {
+ 70e:	08 17       	cp	r16, r24
+ 710:	19 07       	cpc	r17, r25
+ 712:	71 f7       	brne	.-36     	; 0x6f0 <__LOCK_REGION_LENGTH__+0x2f0>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:125
+      for (int j = 0; j < ANODES_Q; j++) {
+        if (leds[i][j] == 1) filled = true;
+      }
+    }
+    if (!filled) {
+ 714:	41 11       	cpse	r20, r1
+ 716:	d1 cf       	rjmp	.-94     	; 0x6ba <__LOCK_REGION_LENGTH__+0x2ba>
+ 718:	82 cf       	rjmp	.-252    	; 0x61e <__LOCK_REGION_LENGTH__+0x21e>
+ 71a:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <prev_millis>
+ 71e:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <prev_millis+0x1>
+ 722:	a0 93 91 00 	sts	0x0091, r26	; 0x800091 <prev_millis+0x2>
+ 726:	b0 93 92 00 	sts	0x0092, r27	; 0x800092 <prev_millis+0x3>
+ 72a:	e5 e0       	ldi	r30, 0x05	; 5
+ 72c:	f0 e0       	ldi	r31, 0x00	; 0
+ 72e:	f0 93 99 00 	sts	0x0099, r31	; 0x800099 <effect_num+0x1>
+ 732:	e0 93 98 00 	sts	0x0098, r30	; 0x800098 <effect_num>
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:132
+      break;
+    }
+  }
+}
+void firework(int del, int fade_del) {
+  clear();
+ 736:	0c dd       	rcall	.-1512   	; 0x150 <clear()>
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 738:	76 be       	out	0x36, r7	; 54
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:134
+  set_br(std_br);
+  delay(del * 10);
+ 73a:	6c eb       	ldi	r22, 0xBC	; 188
+ 73c:	72 e0       	ldi	r23, 0x02	; 2
+ 73e:	80 e0       	ldi	r24, 0x00	; 0
+ 740:	90 e0       	ldi	r25, 0x00	; 0
+ 742:	e5 dc       	rcall	.-1590   	; 0x10e <delay>
+ 744:	c0 e6       	ldi	r28, 0x60	; 96
+ 746:	d0 e0       	ldi	r29, 0x00	; 0
+ 748:	8e 01       	movw	r16, r28
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 74a:	95 ef       	ldi	r25, 0xF5	; 245
+ 74c:	d9 2e       	mov	r13, r25
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:137
+  for (int i = 0; i < CATHODES_Q / 2; i++) {
+    set_br(10);
+    leds[i][1] = 1;
+ 74e:	ff 24       	eor	r15, r15
+ 750:	f3 94       	inc	r15
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 752:	d6 be       	out	0x36, r13	; 54
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:137
+ 754:	f8 01       	movw	r30, r16
+ 756:	f1 82       	std	Z+1, r15	; 0x01
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:138
+    leds[i + 3][1] = 1;
+ 758:	f5 86       	std	Z+13, r15	; 0x0d
+ 75a:	85 ef       	ldi	r24, 0xF5	; 245
+ 75c:	98 2e       	mov	r9, r24
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 75e:	96 be       	out	0x36, r9	; 54
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:141
+    for (int i = 10; i < MAX_BR / 3; i++) {
+      set_br(i);
+      delay(fade_del);
+ 760:	61 e0       	ldi	r22, 0x01	; 1
+ 762:	70 e0       	ldi	r23, 0x00	; 0
+ 764:	80 e0       	ldi	r24, 0x00	; 0
+ 766:	90 e0       	ldi	r25, 0x00	; 0
+ 768:	d2 dc       	rcall	.-1628   	; 0x10e <delay>
+ 76a:	9a 94       	dec	r9
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:139
+  delay(del * 10);
+  for (int i = 0; i < CATHODES_Q / 2; i++) {
+    set_br(10);
+    leds[i][1] = 1;
+    leds[i + 3][1] = 1;
+    for (int i = 10; i < MAX_BR / 3; i++) {
+ 76c:	fb ea       	ldi	r31, 0xAB	; 171
+ 76e:	9f 12       	cpse	r9, r31
+ 770:	f6 cf       	rjmp	.-20     	; 0x75e <__LOCK_REGION_LENGTH__+0x35e>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:143
+      set_br(i);
+      delay(fade_del);
+    }
+    leds[i][2] = 1;
+ 772:	f8 01       	movw	r30, r16
+ 774:	f2 82       	std	Z+2, r15	; 0x02
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:144
+    leds[i + 3][2] = 1;
+ 776:	f6 86       	std	Z+14, r15	; 0x0e
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 778:	96 be       	out	0x36, r9	; 54
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:147
+    for (int i = MAX_BR / 3; i < MAX_BR / 3 * 2; i++) {
+      set_br(i);
+      delay(fade_del);
+ 77a:	61 e0       	ldi	r22, 0x01	; 1
+ 77c:	70 e0       	ldi	r23, 0x00	; 0
+ 77e:	80 e0       	ldi	r24, 0x00	; 0
+ 780:	90 e0       	ldi	r25, 0x00	; 0
+ 782:	c5 dc       	rcall	.-1654   	; 0x10e <delay>
+ 784:	9a 94       	dec	r9
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:145
+      set_br(i);
+      delay(fade_del);
+    }
+    leds[i][2] = 1;
+    leds[i + 3][2] = 1;
+    for (int i = MAX_BR / 3; i < MAX_BR / 3 * 2; i++) {
+ 786:	f7 e5       	ldi	r31, 0x57	; 87
+ 788:	9f 12       	cpse	r9, r31
+ 78a:	f6 cf       	rjmp	.-20     	; 0x778 <__LOCK_REGION_LENGTH__+0x378>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:149
+      set_br(i);
+      delay(fade_del);
+    }
+    leds[i][3] = 1;
+ 78c:	f8 01       	movw	r30, r16
+ 78e:	f3 82       	std	Z+3, r15	; 0x03
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:150
+    leds[i + 3][3] = 1;
+ 790:	f7 86       	std	Z+15, r15	; 0x0f
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 792:	96 be       	out	0x36, r9	; 54
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:153
+    for (int i = MAX_BR / 3 * 2; i < MAX_BR; i++) {
+      set_br(i);
+      delay(fade_del);
+ 794:	61 e0       	ldi	r22, 0x01	; 1
+ 796:	70 e0       	ldi	r23, 0x00	; 0
+ 798:	80 e0       	ldi	r24, 0x00	; 0
+ 79a:	90 e0       	ldi	r25, 0x00	; 0
+ 79c:	b8 dc       	rcall	.-1680   	; 0x10e <delay>
+ 79e:	9a 94       	dec	r9
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:151
+      set_br(i);
+      delay(fade_del);
+    }
+    leds[i][3] = 1;
+    leds[i + 3][3] = 1;
+    for (int i = MAX_BR / 3 * 2; i < MAX_BR; i++) {
+ 7a0:	f1 e0       	ldi	r31, 0x01	; 1
+ 7a2:	9f 12       	cpse	r9, r31
+ 7a4:	f6 cf       	rjmp	.-20     	; 0x792 <__LOCK_REGION_LENGTH__+0x392>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:155
+      set_br(i);
+      delay(fade_del);
+    }
+    leds[i][0] = 1;
+ 7a6:	f8 01       	movw	r30, r16
+ 7a8:	90 82       	st	Z, r9
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:156
+    leds[i + 3][0] = 1;
+ 7aa:	94 86       	std	Z+12, r9	; 0x0c
+ 7ac:	ee 24       	eor	r14, r14
+ 7ae:	e3 94       	inc	r14
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 7b0:	e6 be       	out	0x36, r14	; 54
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:159
+    for (int i = MAX_BR; i > MIN_BR; i--) {
+      set_br(i);
+      delay(fade_del);
+ 7b2:	61 e0       	ldi	r22, 0x01	; 1
+ 7b4:	70 e0       	ldi	r23, 0x00	; 0
+ 7b6:	80 e0       	ldi	r24, 0x00	; 0
+ 7b8:	90 e0       	ldi	r25, 0x00	; 0
+ 7ba:	a9 dc       	rcall	.-1710   	; 0x10e <delay>
+ 7bc:	e3 94       	inc	r14
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:157
+      set_br(i);
+      delay(fade_del);
+    }
+    leds[i][0] = 1;
+    leds[i + 3][0] = 1;
+    for (int i = MAX_BR; i > MIN_BR; i--) {
+ 7be:	fe ef       	ldi	r31, 0xFE	; 254
+ 7c0:	ef 12       	cpse	r14, r31
+ 7c2:	f6 cf       	rjmp	.-20     	; 0x7b0 <__LOCK_REGION_LENGTH__+0x3b0>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:161
+      set_br(i);
+      delay(fade_del);
+    }
+    clear();
+ 7c4:	c5 dc       	rcall	.-1654   	; 0x150 <clear()>
+ 7c6:	0c 5f       	subi	r16, 0xFC	; 252
+ 7c8:	1f 4f       	sbci	r17, 0xFF	; 255
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:135
+}
+void firework(int del, int fade_del) {
+  clear();
+  set_br(std_br);
+  delay(del * 10);
+  for (int i = 0; i < CATHODES_Q / 2; i++) {
+ 7ca:	20 e0       	ldi	r18, 0x00	; 0
+ 7cc:	0c 36       	cpi	r16, 0x6C	; 108
+ 7ce:	12 07       	cpc	r17, r18
+ 7d0:	09 f0       	breq	.+2      	; 0x7d4 <__LOCK_REGION_LENGTH__+0x3d4>
+ 7d2:	bf cf       	rjmp	.-130    	; 0x752 <__LOCK_REGION_LENGTH__+0x352>
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:163
+      set_br(i);
+      delay(fade_del);
+    }
+    clear();
+  }
+  int counter = 0;
+ 7d4:	d1 2c       	mov	r13, r1
+ 7d6:	c1 2c       	mov	r12, r1
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:164
+  for (int i = 0; i < ANODES_Q; i++) {
+ 7d8:	f1 2c       	mov	r15, r1
+ 7da:	e1 2c       	mov	r14, r1
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:166
+    for (int j = 0; j < CATHODES_Q; j++) {
+      leds[j][i] = 1;
+ 7dc:	88 24       	eor	r8, r8
+ 7de:	83 94       	inc	r8
+ 7e0:	89 92       	st	Y+, r8
+ 7e2:	8b 82       	std	Y+3, r8	; 0x03
+ 7e4:	8f 82       	std	Y+7, r8	; 0x07
+ 7e6:	8b 86       	std	Y+11, r8	; 0x0b
+ 7e8:	8f 86       	std	Y+15, r8	; 0x0f
+ 7ea:	8b 8a       	std	Y+19, r8	; 0x13
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:168
+    }
+    if (i != 1) {
+ 7ec:	81 e0       	ldi	r24, 0x01	; 1
+ 7ee:	e8 16       	cp	r14, r24
+ 7f0:	f1 04       	cpc	r15, r1
+ 7f2:	d1 f0       	breq	.+52     	; 0x828 <__LOCK_REGION_LENGTH__+0x428>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:169
+      for (int i = MAX_BR / 3 * counter; i < MAX_BR / 3 * (counter + 1); i++) {
+ 7f4:	c6 01       	movw	r24, r12
+ 7f6:	64 e5       	ldi	r22, 0x54	; 84
+ 7f8:	70 e0       	ldi	r23, 0x00	; 0
+ 7fa:	f0 d1       	rcall	.+992    	; 0xbdc <__mulhi3>
+ 7fc:	8c 01       	movw	r16, r24
+ 7fe:	9f ef       	ldi	r25, 0xFF	; 255
+ 800:	c9 1a       	sub	r12, r25
+ 802:	d9 0a       	sbc	r13, r25
+ 804:	58 01       	movw	r10, r16
+ 806:	e4 e5       	ldi	r30, 0x54	; 84
+ 808:	ae 0e       	add	r10, r30
+ 80a:	b1 1c       	adc	r11, r1
+ 80c:	0a 15       	cp	r16, r10
+ 80e:	1b 05       	cpc	r17, r11
+ 810:	5c f4       	brge	.+22     	; 0x828 <__LOCK_REGION_LENGTH__+0x428>
+ 812:	80 2f       	mov	r24, r16
+ 814:	80 95       	com	r24
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 816:	86 bf       	out	0x36, r24	; 54
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:171
+        set_br(i);
+        delay(fade_del * 3);
+ 818:	63 e0       	ldi	r22, 0x03	; 3
+ 81a:	70 e0       	ldi	r23, 0x00	; 0
+ 81c:	80 e0       	ldi	r24, 0x00	; 0
+ 81e:	90 e0       	ldi	r25, 0x00	; 0
+ 820:	76 dc       	rcall	.-1812   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:169
+  for (int i = 0; i < ANODES_Q; i++) {
+    for (int j = 0; j < CATHODES_Q; j++) {
+      leds[j][i] = 1;
+    }
+    if (i != 1) {
+      for (int i = MAX_BR / 3 * counter; i < MAX_BR / 3 * (counter + 1); i++) {
+ 822:	0f 5f       	subi	r16, 0xFF	; 255
+ 824:	1f 4f       	sbci	r17, 0xFF	; 255
+ 826:	f2 cf       	rjmp	.-28     	; 0x80c <__LOCK_REGION_LENGTH__+0x40c>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:164
+      delay(fade_del);
+    }
+    clear();
+  }
+  int counter = 0;
+  for (int i = 0; i < ANODES_Q; i++) {
+ 828:	ff ef       	ldi	r31, 0xFF	; 255
+ 82a:	ef 1a       	sub	r14, r31
+ 82c:	ff 0a       	sbc	r15, r31
+ 82e:	24 e0       	ldi	r18, 0x04	; 4
+ 830:	e2 16       	cp	r14, r18
+ 832:	f1 04       	cpc	r15, r1
+ 834:	a9 f6       	brne	.-86     	; 0x7e0 <__LOCK_REGION_LENGTH__+0x3e0>
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+ 836:	96 be       	out	0x36, r9	; 54
+firework():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:178
+      counter++;
+    }
+  }
+  for (int i = MAX_BR; i > MIN_BR; i--) {
+    set_br(i);
+    delay(fade_del * 3);
+ 838:	63 e0       	ldi	r22, 0x03	; 3
+ 83a:	70 e0       	ldi	r23, 0x00	; 0
+ 83c:	80 e0       	ldi	r24, 0x00	; 0
+ 83e:	90 e0       	ldi	r25, 0x00	; 0
+ 840:	66 dc       	rcall	.-1844   	; 0x10e <delay>
+ 842:	93 94       	inc	r9
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:176
+        delay(fade_del * 3);
+      }
+      counter++;
+    }
+  }
+  for (int i = MAX_BR; i > MIN_BR; i--) {
+ 844:	8e ef       	ldi	r24, 0xFE	; 254
+ 846:	98 12       	cpse	r9, r24
+ 848:	f6 cf       	rjmp	.-20     	; 0x836 <__LOCK_REGION_LENGTH__+0x436>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:180
+    set_br(i);
+    delay(fade_del * 3);
+  }
+  clear();
+ 84a:	82 dc       	rcall	.-1788   	; 0x150 <clear()>
+ 84c:	77 cd       	rjmp	.-1298   	; 0x33c <main+0xb2>
+ 84e:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <prev_millis>
+ 852:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <prev_millis+0x1>
+ 856:	a0 93 91 00 	sts	0x0091, r26	; 0x800091 <prev_millis+0x2>
+ 85a:	b0 93 92 00 	sts	0x0092, r27	; 0x800092 <prev_millis+0x3>
+ 85e:	50 92 99 00 	sts	0x0099, r5	; 0x800099 <effect_num+0x1>
+ 862:	40 92 98 00 	sts	0x0098, r4	; 0x800098 <effect_num>
+loop():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:111
+      break;
+    case 5:
+      firework(70, 1);
+      break;
+    case 6:
+      ray_m(35, counter);
+ 866:	c0 91 97 00 	lds	r28, 0x0097	; 0x800097 <counter>
+ 86a:	d0 e0       	ldi	r29, 0x00	; 0
+ray_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:184
+
+}
+void ray_m(int del, int counter) {
+  clear();
+ 86c:	71 dc       	rcall	.-1822   	; 0x150 <clear()>
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+  PORTB |= 0b00000010;
+  PORTB &= 0b11111110;
+  millis += 2;
+}
+void set_br(byte br) {
+  OCR0A = 0xFF - br;
+ 86e:	76 be       	out	0x36, r7	; 54
+ray_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:186
+  set_br(std_br);
+  counter %= 3;
+ 870:	ce 01       	movw	r24, r28
+ 872:	b1 01       	movw	r22, r2
+ 874:	d8 d1       	rcall	.+944    	; 0xc26 <__divmodhi4>
+ 876:	6c 01       	movw	r12, r24
+ 878:	ec 01       	movw	r28, r24
+ 87a:	cc 0f       	add	r28, r28
+ 87c:	dd 1f       	adc	r29, r29
+ 87e:	cc 0f       	add	r28, r28
+ 880:	dd 1f       	adc	r29, r29
+ 882:	c0 5a       	subi	r28, 0xA0	; 160
+ 884:	df 4f       	sbci	r29, 0xFF	; 255
+ 886:	8e 01       	movw	r16, r28
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:189
+  for (int i = counter; i < CATHODES_Q / 2; i++) {
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 1;
+ 888:	99 24       	eor	r9, r9
+ 88a:	93 94       	inc	r9
+ 88c:	f8 01       	movw	r30, r16
+ 88e:	90 82       	st	Z, r9
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:190
+      if (j != 1) delay(del);
+ 890:	63 e2       	ldi	r22, 0x23	; 35
+ 892:	70 e0       	ldi	r23, 0x00	; 0
+ 894:	80 e0       	ldi	r24, 0x00	; 0
+ 896:	90 e0       	ldi	r25, 0x00	; 0
+ 898:	3a dc       	rcall	.-1932   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:189
+  clear();
+  set_br(std_br);
+  counter %= 3;
+  for (int i = counter; i < CATHODES_Q / 2; i++) {
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 1;
+ 89a:	f8 01       	movw	r30, r16
+ 89c:	91 82       	std	Z+1, r9	; 0x01
+ 89e:	92 82       	std	Z+2, r9	; 0x02
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:190
+      if (j != 1) delay(del);
+ 8a0:	63 e2       	ldi	r22, 0x23	; 35
+ 8a2:	70 e0       	ldi	r23, 0x00	; 0
+ 8a4:	80 e0       	ldi	r24, 0x00	; 0
+ 8a6:	90 e0       	ldi	r25, 0x00	; 0
+ 8a8:	32 dc       	rcall	.-1948   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:189
+  clear();
+  set_br(std_br);
+  counter %= 3;
+  for (int i = counter; i < CATHODES_Q / 2; i++) {
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 1;
+ 8aa:	f8 01       	movw	r30, r16
+ 8ac:	93 82       	std	Z+3, r9	; 0x03
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:190
+      if (j != 1) delay(del);
+ 8ae:	63 e2       	ldi	r22, 0x23	; 35
+ 8b0:	70 e0       	ldi	r23, 0x00	; 0
+ 8b2:	80 e0       	ldi	r24, 0x00	; 0
+ 8b4:	90 e0       	ldi	r25, 0x00	; 0
+ 8b6:	2b dc       	rcall	.-1962   	; 0x10e <delay>
+ 8b8:	58 01       	movw	r10, r16
+ 8ba:	fc e0       	ldi	r31, 0x0C	; 12
+ 8bc:	af 0e       	add	r10, r31
+ 8be:	b1 1c       	adc	r11, r1
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:192
+    }
+    for (int j = 0; j < ANODES_Q; j++) {
+ 8c0:	f1 2c       	mov	r15, r1
+ 8c2:	e1 2c       	mov	r14, r1
+ray_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:193
+      leds[i + 3][j] = 1;
+ 8c4:	f5 01       	movw	r30, r10
+ 8c6:	91 92       	st	Z+, r9
+ 8c8:	5f 01       	movw	r10, r30
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:194
+      if (j != 1) delay(del);
+ 8ca:	f1 e0       	ldi	r31, 0x01	; 1
+ 8cc:	ef 16       	cp	r14, r31
+ 8ce:	f1 04       	cpc	r15, r1
+ 8d0:	29 f0       	breq	.+10     	; 0x8dc <__LOCK_REGION_LENGTH__+0x4dc>
+ 8d2:	63 e2       	ldi	r22, 0x23	; 35
+ 8d4:	70 e0       	ldi	r23, 0x00	; 0
+ 8d6:	80 e0       	ldi	r24, 0x00	; 0
+ 8d8:	90 e0       	ldi	r25, 0x00	; 0
+ 8da:	19 dc       	rcall	.-1998   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:192
+  for (int i = counter; i < CATHODES_Q / 2; i++) {
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 1;
+      if (j != 1) delay(del);
+    }
+    for (int j = 0; j < ANODES_Q; j++) {
+ 8dc:	2f ef       	ldi	r18, 0xFF	; 255
+ 8de:	e2 1a       	sub	r14, r18
+ 8e0:	f2 0a       	sbc	r15, r18
+ 8e2:	84 e0       	ldi	r24, 0x04	; 4
+ 8e4:	e8 16       	cp	r14, r24
+ 8e6:	f1 04       	cpc	r15, r1
+ 8e8:	69 f7       	brne	.-38     	; 0x8c4 <__LOCK_REGION_LENGTH__+0x4c4>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:196
+      leds[i + 3][j] = 1;
+      if (j != 1) delay(del);
+    }
+    delay(del * 2);
+ 8ea:	66 e4       	ldi	r22, 0x46	; 70
+ 8ec:	70 e0       	ldi	r23, 0x00	; 0
+ 8ee:	80 e0       	ldi	r24, 0x00	; 0
+ 8f0:	90 e0       	ldi	r25, 0x00	; 0
+ 8f2:	0d dc       	rcall	.-2022   	; 0x10e <delay>
+ 8f4:	0c 5f       	subi	r16, 0xFC	; 252
+ 8f6:	1f 4f       	sbci	r17, 0xFF	; 255
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:187
+}
+void ray_m(int del, int counter) {
+  clear();
+  set_br(std_br);
+  counter %= 3;
+  for (int i = counter; i < CATHODES_Q / 2; i++) {
+ 8f8:	90 e0       	ldi	r25, 0x00	; 0
+ 8fa:	0c 36       	cpi	r16, 0x6C	; 108
+ 8fc:	19 07       	cpc	r17, r25
+ 8fe:	31 f6       	brne	.-116    	; 0x88c <__LOCK_REGION_LENGTH__+0x48c>
+ 900:	00 e6       	ldi	r16, 0x60	; 96
+ 902:	10 e0       	ldi	r17, 0x00	; 0
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:199
+      if (j != 1) delay(del);
+    }
+    delay(del * 2);
+  }
+
+  for (int i = 0; i <= counter; i++) {
+ 904:	b1 2c       	mov	r11, r1
+ 906:	a1 2c       	mov	r10, r1
+ray_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:201
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 1;
+ 908:	66 24       	eor	r6, r6
+ 90a:	63 94       	inc	r6
+ 90c:	f8 01       	movw	r30, r16
+ 90e:	60 82       	st	Z, r6
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:202
+      if (j != 1) delay(del);
+ 910:	63 e2       	ldi	r22, 0x23	; 35
+ 912:	70 e0       	ldi	r23, 0x00	; 0
+ 914:	80 e0       	ldi	r24, 0x00	; 0
+ 916:	90 e0       	ldi	r25, 0x00	; 0
+ 918:	fa db       	rcall	.-2060   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:201
+    delay(del * 2);
+  }
+
+  for (int i = 0; i <= counter; i++) {
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 1;
+ 91a:	f8 01       	movw	r30, r16
+ 91c:	61 82       	std	Z+1, r6	; 0x01
+ 91e:	62 82       	std	Z+2, r6	; 0x02
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:202
+      if (j != 1) delay(del);
+ 920:	63 e2       	ldi	r22, 0x23	; 35
+ 922:	70 e0       	ldi	r23, 0x00	; 0
+ 924:	80 e0       	ldi	r24, 0x00	; 0
+ 926:	90 e0       	ldi	r25, 0x00	; 0
+ 928:	f2 db       	rcall	.-2076   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:201
+    delay(del * 2);
+  }
+
+  for (int i = 0; i <= counter; i++) {
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 1;
+ 92a:	f8 01       	movw	r30, r16
+ 92c:	63 82       	std	Z+3, r6	; 0x03
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:202
+      if (j != 1) delay(del);
+ 92e:	63 e2       	ldi	r22, 0x23	; 35
+ 930:	70 e0       	ldi	r23, 0x00	; 0
+ 932:	80 e0       	ldi	r24, 0x00	; 0
+ 934:	90 e0       	ldi	r25, 0x00	; 0
+ 936:	eb db       	rcall	.-2090   	; 0x10e <delay>
+ 938:	48 01       	movw	r8, r16
+ 93a:	fc e0       	ldi	r31, 0x0C	; 12
+ 93c:	8f 0e       	add	r8, r31
+ 93e:	91 1c       	adc	r9, r1
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:204
+    }
+    for (int j = 0; j < ANODES_Q; j++) {
+ 940:	f1 2c       	mov	r15, r1
+ 942:	e1 2c       	mov	r14, r1
+ray_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:205
+      leds[i + 3][j] = 1;
+ 944:	f4 01       	movw	r30, r8
+ 946:	61 92       	st	Z+, r6
+ 948:	4f 01       	movw	r8, r30
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:206
+      if (j != 1) delay(del);
+ 94a:	f1 e0       	ldi	r31, 0x01	; 1
+ 94c:	ef 16       	cp	r14, r31
+ 94e:	f1 04       	cpc	r15, r1
+ 950:	29 f0       	breq	.+10     	; 0x95c <__LOCK_REGION_LENGTH__+0x55c>
+ 952:	63 e2       	ldi	r22, 0x23	; 35
+ 954:	70 e0       	ldi	r23, 0x00	; 0
+ 956:	80 e0       	ldi	r24, 0x00	; 0
+ 958:	90 e0       	ldi	r25, 0x00	; 0
+ 95a:	d9 db       	rcall	.-2126   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:204
+  for (int i = 0; i <= counter; i++) {
+    for (int j = 0; j < ANODES_Q; j++) {
+      leds[i][j] = 1;
+      if (j != 1) delay(del);
+    }
+    for (int j = 0; j < ANODES_Q; j++) {
+ 95c:	2f ef       	ldi	r18, 0xFF	; 255
+ 95e:	e2 1a       	sub	r14, r18
+ 960:	f2 0a       	sbc	r15, r18
+ 962:	84 e0       	ldi	r24, 0x04	; 4
+ 964:	e8 16       	cp	r14, r24
+ 966:	f1 04       	cpc	r15, r1
+ 968:	69 f7       	brne	.-38     	; 0x944 <__LOCK_REGION_LENGTH__+0x544>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:208
+      leds[i + 3][j] = 1;
+      if (j != 1) delay(del);
+    }
+    delay(del * 2);
+ 96a:	66 e4       	ldi	r22, 0x46	; 70
+ 96c:	70 e0       	ldi	r23, 0x00	; 0
+ 96e:	80 e0       	ldi	r24, 0x00	; 0
+ 970:	90 e0       	ldi	r25, 0x00	; 0
+ 972:	cd db       	rcall	.-2150   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:199
+      if (j != 1) delay(del);
+    }
+    delay(del * 2);
+  }
+
+  for (int i = 0; i <= counter; i++) {
+ 974:	9f ef       	ldi	r25, 0xFF	; 255
+ 976:	a9 1a       	sub	r10, r25
+ 978:	b9 0a       	sbc	r11, r25
+ 97a:	0c 5f       	subi	r16, 0xFC	; 252
+ 97c:	1f 4f       	sbci	r17, 0xFF	; 255
+ 97e:	ca 14       	cp	r12, r10
+ 980:	db 04       	cpc	r13, r11
+ 982:	24 f6       	brge	.-120    	; 0x90c <__LOCK_REGION_LENGTH__+0x50c>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:213
+    delay(del * 2);
+  }
+  
+  for (int i = counter ; i >= 0; i--) {
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+      leds[i][j] = 0;
+ 984:	1b 82       	std	Y+3, r1	; 0x03
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:214
+      if (j != 2) delay(del);
+ 986:	63 e2       	ldi	r22, 0x23	; 35
+ 988:	70 e0       	ldi	r23, 0x00	; 0
+ 98a:	80 e0       	ldi	r24, 0x00	; 0
+ 98c:	90 e0       	ldi	r25, 0x00	; 0
+ 98e:	bf db       	rcall	.-2178   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:213
+    delay(del * 2);
+  }
+  
+  for (int i = counter ; i >= 0; i--) {
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+      leds[i][j] = 0;
+ 990:	1a 82       	std	Y+2, r1	; 0x02
+ 992:	19 82       	std	Y+1, r1	; 0x01
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:214
+      if (j != 2) delay(del);
+ 994:	63 e2       	ldi	r22, 0x23	; 35
+ 996:	70 e0       	ldi	r23, 0x00	; 0
+ 998:	80 e0       	ldi	r24, 0x00	; 0
+ 99a:	90 e0       	ldi	r25, 0x00	; 0
+ 99c:	b8 db       	rcall	.-2192   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:213
+    delay(del * 2);
+  }
+  
+  for (int i = counter ; i >= 0; i--) {
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+      leds[i][j] = 0;
+ 99e:	18 82       	st	Y, r1
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:214
+      if (j != 2) delay(del);
+ 9a0:	63 e2       	ldi	r22, 0x23	; 35
+ 9a2:	70 e0       	ldi	r23, 0x00	; 0
+ 9a4:	80 e0       	ldi	r24, 0x00	; 0
+ 9a6:	90 e0       	ldi	r25, 0x00	; 0
+ 9a8:	b2 db       	rcall	.-2204   	; 0x10e <delay>
+ 9aa:	7e 01       	movw	r14, r28
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:216
+    }
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+ 9ac:	03 e0       	ldi	r16, 0x03	; 3
+ 9ae:	10 e0       	ldi	r17, 0x00	; 0
+ray_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:217
+      leds[i + 3][j] = 0;
+ 9b0:	f7 01       	movw	r30, r14
+ 9b2:	17 86       	std	Z+15, r1	; 0x0f
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:218
+      if (j != 2) delay(del);
+ 9b4:	02 30       	cpi	r16, 0x02	; 2
+ 9b6:	11 05       	cpc	r17, r1
+ 9b8:	29 f0       	breq	.+10     	; 0x9c4 <__LOCK_REGION_LENGTH__+0x5c4>
+ 9ba:	63 e2       	ldi	r22, 0x23	; 35
+ 9bc:	70 e0       	ldi	r23, 0x00	; 0
+ 9be:	80 e0       	ldi	r24, 0x00	; 0
+ 9c0:	90 e0       	ldi	r25, 0x00	; 0
+ 9c2:	a5 db       	rcall	.-2230   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:216
+  for (int i = counter ; i >= 0; i--) {
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+      leds[i][j] = 0;
+      if (j != 2) delay(del);
+    }
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+ 9c4:	01 50       	subi	r16, 0x01	; 1
+ 9c6:	11 09       	sbc	r17, r1
+ 9c8:	f1 e0       	ldi	r31, 0x01	; 1
+ 9ca:	ef 1a       	sub	r14, r31
+ 9cc:	f1 08       	sbc	r15, r1
+ 9ce:	0f 3f       	cpi	r16, 0xFF	; 255
+ 9d0:	10 07       	cpc	r17, r16
+ 9d2:	71 f7       	brne	.-36     	; 0x9b0 <__LOCK_REGION_LENGTH__+0x5b0>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:220
+      leds[i + 3][j] = 0;
+      if (j != 2) delay(del);
+    }
+    delay(del * 2);
+ 9d4:	66 e4       	ldi	r22, 0x46	; 70
+ 9d6:	70 e0       	ldi	r23, 0x00	; 0
+ 9d8:	80 e0       	ldi	r24, 0x00	; 0
+ 9da:	90 e0       	ldi	r25, 0x00	; 0
+ 9dc:	98 db       	rcall	.-2256   	; 0x10e <delay>
+ 9de:	24 97       	sbiw	r28, 0x04	; 4
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:211
+      if (j != 1) delay(del);
+    }
+    delay(del * 2);
+  }
+  
+  for (int i = counter ; i >= 0; i--) {
+ 9e0:	80 e0       	ldi	r24, 0x00	; 0
+ 9e2:	cc 35       	cpi	r28, 0x5C	; 92
+ 9e4:	d8 07       	cpc	r29, r24
+ 9e6:	71 f6       	brne	.-100    	; 0x984 <__LOCK_REGION_LENGTH__+0x584>
+ 9e8:	c8 e6       	ldi	r28, 0x68	; 104
+ 9ea:	d0 e0       	ldi	r29, 0x00	; 0
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:223
+      if (j != 2) delay(del);
+    }
+    delay(del * 2);
+  }
+
+  for (int i = CATHODES_Q / 2 - 1; i >= counter; i--) {
+ 9ec:	12 e0       	ldi	r17, 0x02	; 2
+ 9ee:	e1 2e       	mov	r14, r17
+ 9f0:	f1 2c       	mov	r15, r1
+ray_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:225
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+      leds[i][j] = 0;
+ 9f2:	1b 82       	std	Y+3, r1	; 0x03
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:226
+      if (j != 2) delay(del);
+ 9f4:	63 e2       	ldi	r22, 0x23	; 35
+ 9f6:	70 e0       	ldi	r23, 0x00	; 0
+ 9f8:	80 e0       	ldi	r24, 0x00	; 0
+ 9fa:	90 e0       	ldi	r25, 0x00	; 0
+ 9fc:	88 db       	rcall	.-2288   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:225
+    delay(del * 2);
+  }
+
+  for (int i = CATHODES_Q / 2 - 1; i >= counter; i--) {
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+      leds[i][j] = 0;
+ 9fe:	1a 82       	std	Y+2, r1	; 0x02
+ a00:	19 82       	std	Y+1, r1	; 0x01
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:226
+      if (j != 2) delay(del);
+ a02:	63 e2       	ldi	r22, 0x23	; 35
+ a04:	70 e0       	ldi	r23, 0x00	; 0
+ a06:	80 e0       	ldi	r24, 0x00	; 0
+ a08:	90 e0       	ldi	r25, 0x00	; 0
+ a0a:	81 db       	rcall	.-2302   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:225
+    delay(del * 2);
+  }
+
+  for (int i = CATHODES_Q / 2 - 1; i >= counter; i--) {
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+      leds[i][j] = 0;
+ a0c:	18 82       	st	Y, r1
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:226
+      if (j != 2) delay(del);
+ a0e:	63 e2       	ldi	r22, 0x23	; 35
+ a10:	70 e0       	ldi	r23, 0x00	; 0
+ a12:	80 e0       	ldi	r24, 0x00	; 0
+ a14:	90 e0       	ldi	r25, 0x00	; 0
+ a16:	7b db       	rcall	.-2314   	; 0x10e <delay>
+ a18:	5e 01       	movw	r10, r28
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:228
+    }
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+ a1a:	03 e0       	ldi	r16, 0x03	; 3
+ a1c:	10 e0       	ldi	r17, 0x00	; 0
+ray_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:229
+      leds[i + 3][j] = 0;
+ a1e:	f5 01       	movw	r30, r10
+ a20:	17 86       	std	Z+15, r1	; 0x0f
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:230
+      if (j != 2) delay(del);
+ a22:	02 30       	cpi	r16, 0x02	; 2
+ a24:	11 05       	cpc	r17, r1
+ a26:	29 f0       	breq	.+10     	; 0xa32 <__LOCK_REGION_LENGTH__+0x632>
+ a28:	63 e2       	ldi	r22, 0x23	; 35
+ a2a:	70 e0       	ldi	r23, 0x00	; 0
+ a2c:	80 e0       	ldi	r24, 0x00	; 0
+ a2e:	90 e0       	ldi	r25, 0x00	; 0
+ a30:	6e db       	rcall	.-2340   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:228
+  for (int i = CATHODES_Q / 2 - 1; i >= counter; i--) {
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+      leds[i][j] = 0;
+      if (j != 2) delay(del);
+    }
+    for (int j = ANODES_Q - 1; j >= 0; j--) {
+ a32:	01 50       	subi	r16, 0x01	; 1
+ a34:	11 09       	sbc	r17, r1
+ a36:	f1 e0       	ldi	r31, 0x01	; 1
+ a38:	af 1a       	sub	r10, r31
+ a3a:	b1 08       	sbc	r11, r1
+ a3c:	0f 3f       	cpi	r16, 0xFF	; 255
+ a3e:	10 07       	cpc	r17, r16
+ a40:	71 f7       	brne	.-36     	; 0xa1e <__LOCK_REGION_LENGTH__+0x61e>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:232
+      leds[i + 3][j] = 0;
+      if (j != 2) delay(del);
+    }
+    delay(del * 2);
+ a42:	66 e4       	ldi	r22, 0x46	; 70
+ a44:	70 e0       	ldi	r23, 0x00	; 0
+ a46:	80 e0       	ldi	r24, 0x00	; 0
+ a48:	90 e0       	ldi	r25, 0x00	; 0
+ a4a:	61 db       	rcall	.-2366   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:223
+      if (j != 2) delay(del);
+    }
+    delay(del * 2);
+  }
+
+  for (int i = CATHODES_Q / 2 - 1; i >= counter; i--) {
+ a4c:	81 e0       	ldi	r24, 0x01	; 1
+ a4e:	e8 1a       	sub	r14, r24
+ a50:	f1 08       	sbc	r15, r1
+ a52:	24 97       	sbiw	r28, 0x04	; 4
+ a54:	ec 14       	cp	r14, r12
+ a56:	fd 04       	cpc	r15, r13
+ a58:	64 f6       	brge	.-104    	; 0x9f2 <__LOCK_REGION_LENGTH__+0x5f2>
+loop():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:112
+    case 5:
+      firework(70, 1);
+      break;
+    case 6:
+      ray_m(35, counter);
+      counter++;
+ a5a:	80 91 97 00 	lds	r24, 0x0097	; 0x800097 <counter>
+ a5e:	8f 5f       	subi	r24, 0xFF	; 255
+ a60:	80 93 97 00 	sts	0x0097, r24	; 0x800097 <counter>
+ a64:	6b cc       	rjmp	.-1834   	; 0x33c <main+0xb2>
+ a66:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <prev_millis>
+ a6a:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <prev_millis+0x1>
+ a6e:	a0 93 91 00 	sts	0x0091, r26	; 0x800091 <prev_millis+0x2>
+ a72:	b0 93 92 00 	sts	0x0092, r27	; 0x800092 <prev_millis+0x3>
+ a76:	e7 e0       	ldi	r30, 0x07	; 7
+ a78:	f0 e0       	ldi	r31, 0x00	; 0
+ a7a:	f0 93 99 00 	sts	0x0099, r31	; 0x800099 <effect_num+0x1>
+ a7e:	e0 93 98 00 	sts	0x0098, r30	; 0x800098 <effect_num>
+round3_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:237
+    delay(del * 2);
+  }
+
+}
+void round3_m(int del) {
+  clear();
+ a82:	66 db       	rcall	.-2356   	; 0x150 <clear()>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:238
+  delay(del);
+ a84:	62 e3       	ldi	r22, 0x32	; 50
+ a86:	70 e0       	ldi	r23, 0x00	; 0
+ a88:	80 e0       	ldi	r24, 0x00	; 0
+ a8a:	90 e0       	ldi	r25, 0x00	; 0
+ a8c:	40 db       	rcall	.-2432   	; 0x10e <delay>
+set_br():
+/home/vasia/projects/VasSnow/software/sketch/sketch.ino:41
+  PORTB |= 0b00000010;
+  PORTB &= 0b11111110;
+  millis += 2;
+}
+void set_br(byte br) {
+  OCR0A = 0xFF - br;
+ a8e:	76 be       	out	0x36, r7	; 54
+round3_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:240
+  set_br(std_br);
+  leds[0][0] = 1;
+ a90:	81 e0       	ldi	r24, 0x01	; 1
+ a92:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__data_start>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:241
+  leds[0][2] = 1;
+ a96:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <__data_start+0x2>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:242
+  leds[0][3] = 1;
+ a9a:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <__data_start+0x3>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:243
+  delay(del);
+ a9e:	62 e3       	ldi	r22, 0x32	; 50
+ aa0:	70 e0       	ldi	r23, 0x00	; 0
+ aa2:	80 e0       	ldi	r24, 0x00	; 0
+ aa4:	90 e0       	ldi	r25, 0x00	; 0
+ aa6:	33 db       	rcall	.-2458   	; 0x10e <delay>
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:244
+  for (int i = 0; i < CATHODES_Q * 2 - 1; i++) {
+ aa8:	30 e0       	ldi	r19, 0x00	; 0
+ aaa:	20 e0       	ldi	r18, 0x00	; 0
+round3_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:245
+    leds[i / 2][0] = 1;
+ aac:	11 e0       	ldi	r17, 0x01	; 1
+ aae:	f9 01       	movw	r30, r18
+ ab0:	f5 95       	asr	r31
+ ab2:	e7 95       	ror	r30
+ ab4:	ee 0f       	add	r30, r30
+ ab6:	ff 1f       	adc	r31, r31
+ ab8:	ee 0f       	add	r30, r30
+ aba:	ff 1f       	adc	r31, r31
+ abc:	e0 5a       	subi	r30, 0xA0	; 160
+ abe:	ff 4f       	sbci	r31, 0xFF	; 255
+ ac0:	10 83       	st	Z, r17
+ ac2:	c9 01       	movw	r24, r18
+ ac4:	e9 01       	movw	r28, r18
+ ac6:	21 96       	adiw	r28, 0x01	; 1
+ ac8:	37 fd       	sbrc	r19, 7
+ aca:	ce 01       	movw	r24, r28
+ acc:	95 95       	asr	r25
+ ace:	87 95       	ror	r24
+ ad0:	91 95       	neg	r25
+ ad2:	81 95       	neg	r24
+ ad4:	91 09       	sbc	r25, r1
+ ad6:	05 96       	adiw	r24, 0x05	; 5
+ ad8:	88 0f       	add	r24, r24
+ ada:	99 1f       	adc	r25, r25
+ adc:	88 0f       	add	r24, r24
+ ade:	99 1f       	adc	r25, r25
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:246
+    if (i % 2 != 0) {
+ ae0:	20 ff       	sbrs	r18, 0
+ ae2:	4c c0       	rjmp	.+152    	; 0xb7c <__LOCK_REGION_LENGTH__+0x77c>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:247
+      leds[5-((i) / 2)][2] = 1;
+ ae4:	fc 01       	movw	r30, r24
+ ae6:	e0 5a       	subi	r30, 0xA0	; 160
+ ae8:	ff 4f       	sbci	r31, 0xFF	; 255
+ aea:	12 83       	std	Z+2, r17	; 0x02
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:248
+      leds[5-((i) / 2)][3] = 1;
+ aec:	13 83       	std	Z+3, r17	; 0x03
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:251
+    }
+    else leds[5-((i) / 2)][1] = 1;
+    delay(del);
+ aee:	62 e3       	ldi	r22, 0x32	; 50
+ af0:	70 e0       	ldi	r23, 0x00	; 0
+ af2:	80 e0       	ldi	r24, 0x00	; 0
+ af4:	90 e0       	ldi	r25, 0x00	; 0
+ af6:	0b db       	rcall	.-2538   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:244
+  set_br(std_br);
+  leds[0][0] = 1;
+  leds[0][2] = 1;
+  leds[0][3] = 1;
+  delay(del);
+  for (int i = 0; i < CATHODES_Q * 2 - 1; i++) {
+ af8:	9e 01       	movw	r18, r28
+ afa:	2b 97       	sbiw	r28, 0x0b	; 11
+ afc:	c1 f6       	brne	.-80     	; 0xaae <__LOCK_REGION_LENGTH__+0x6ae>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:253
+      leds[5-((i) / 2)][3] = 1;
+    }
+    else leds[5-((i) / 2)][1] = 1;
+    delay(del);
+  }
+  delay(del * 2);
+ afe:	64 e6       	ldi	r22, 0x64	; 100
+ b00:	70 e0       	ldi	r23, 0x00	; 0
+ b02:	80 e0       	ldi	r24, 0x00	; 0
+ b04:	90 e0       	ldi	r25, 0x00	; 0
+ b06:	03 db       	rcall	.-2554   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:254
+  leds[0][0] = 0;
+ b08:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__data_start>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:255
+  leds[0][2] = 0;
+ b0c:	10 92 62 00 	sts	0x0062, r1	; 0x800062 <__data_start+0x2>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:256
+  leds[0][3] = 0;
+ b10:	10 92 63 00 	sts	0x0063, r1	; 0x800063 <__data_start+0x3>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:257
+  delay(del);
+ b14:	62 e3       	ldi	r22, 0x32	; 50
+ b16:	70 e0       	ldi	r23, 0x00	; 0
+ b18:	80 e0       	ldi	r24, 0x00	; 0
+ b1a:	90 e0       	ldi	r25, 0x00	; 0
+ b1c:	f8 da       	rcall	.-2576   	; 0x10e <delay>
+main():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:258
+  for (int i = 0; i < CATHODES_Q * 2 - 1; i++) {
+ b1e:	30 e0       	ldi	r19, 0x00	; 0
+ b20:	20 e0       	ldi	r18, 0x00	; 0
+round3_m():
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:259
+    leds[i / 2][0] = 0;
+ b22:	f9 01       	movw	r30, r18
+ b24:	f5 95       	asr	r31
+ b26:	e7 95       	ror	r30
+ b28:	ee 0f       	add	r30, r30
+ b2a:	ff 1f       	adc	r31, r31
+ b2c:	ee 0f       	add	r30, r30
+ b2e:	ff 1f       	adc	r31, r31
+ b30:	e0 5a       	subi	r30, 0xA0	; 160
+ b32:	ff 4f       	sbci	r31, 0xFF	; 255
+ b34:	10 82       	st	Z, r1
+ b36:	c9 01       	movw	r24, r18
+ b38:	e9 01       	movw	r28, r18
+ b3a:	21 96       	adiw	r28, 0x01	; 1
+ b3c:	37 fd       	sbrc	r19, 7
+ b3e:	ce 01       	movw	r24, r28
+ b40:	95 95       	asr	r25
+ b42:	87 95       	ror	r24
+ b44:	91 95       	neg	r25
+ b46:	81 95       	neg	r24
+ b48:	91 09       	sbc	r25, r1
+ b4a:	05 96       	adiw	r24, 0x05	; 5
+ b4c:	88 0f       	add	r24, r24
+ b4e:	99 1f       	adc	r25, r25
+ b50:	88 0f       	add	r24, r24
+ b52:	99 1f       	adc	r25, r25
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:260
+    if (i % 2 != 0) {
+ b54:	20 ff       	sbrs	r18, 0
+ b56:	17 c0       	rjmp	.+46     	; 0xb86 <__LOCK_REGION_LENGTH__+0x786>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:261
+      leds[5-((i) / 2)][2] = 0;
+ b58:	fc 01       	movw	r30, r24
+ b5a:	e0 5a       	subi	r30, 0xA0	; 160
+ b5c:	ff 4f       	sbci	r31, 0xFF	; 255
+ b5e:	12 82       	std	Z+2, r1	; 0x02
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:262
+      leds[5-((i) / 2)][3] = 0;
+ b60:	13 82       	std	Z+3, r1	; 0x03
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:265
+    }
+    else leds[5-((i) / 2)][1] = 0;
+    delay(del);
+ b62:	62 e3       	ldi	r22, 0x32	; 50
+ b64:	70 e0       	ldi	r23, 0x00	; 0
+ b66:	80 e0       	ldi	r24, 0x00	; 0
+ b68:	90 e0       	ldi	r25, 0x00	; 0
+ b6a:	d1 da       	rcall	.-2654   	; 0x10e <delay>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:258
+  delay(del * 2);
+  leds[0][0] = 0;
+  leds[0][2] = 0;
+  leds[0][3] = 0;
+  delay(del);
+  for (int i = 0; i < CATHODES_Q * 2 - 1; i++) {
+ b6c:	9e 01       	movw	r18, r28
+ b6e:	2b 97       	sbiw	r28, 0x0b	; 11
+ b70:	c1 f6       	brne	.-80     	; 0xb22 <__LOCK_REGION_LENGTH__+0x722>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:267
+      leds[5-((i) / 2)][3] = 0;
+    }
+    else leds[5-((i) / 2)][1] = 0;
+    delay(del);
+  }
+  delay(del * 2);
+ b72:	64 e6       	ldi	r22, 0x64	; 100
+ b74:	70 e0       	ldi	r23, 0x00	; 0
+ b76:	80 e0       	ldi	r24, 0x00	; 0
+ b78:	90 e0       	ldi	r25, 0x00	; 0
+ b7a:	55 cd       	rjmp	.-1366   	; 0x626 <__LOCK_REGION_LENGTH__+0x226>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:250
+    leds[i / 2][0] = 1;
+    if (i % 2 != 0) {
+      leds[5-((i) / 2)][2] = 1;
+      leds[5-((i) / 2)][3] = 1;
+    }
+    else leds[5-((i) / 2)][1] = 1;
+ b7c:	80 5a       	subi	r24, 0xA0	; 160
+ b7e:	9f 4f       	sbci	r25, 0xFF	; 255
+ b80:	fc 01       	movw	r30, r24
+ b82:	11 83       	std	Z+1, r17	; 0x01
+ b84:	b4 cf       	rjmp	.-152    	; 0xaee <__LOCK_REGION_LENGTH__+0x6ee>
+/home/vasia/projects/VasSnow/software/sketch/effects.ino:264
+    leds[i / 2][0] = 0;
+    if (i % 2 != 0) {
+      leds[5-((i) / 2)][2] = 0;
+      leds[5-((i) / 2)][3] = 0;
+    }
+    else leds[5-((i) / 2)][1] = 0;
+ b86:	80 5a       	subi	r24, 0xA0	; 160
+ b88:	9f 4f       	sbci	r25, 0xFF	; 255
+ b8a:	fc 01       	movw	r30, r24
+ b8c:	11 82       	std	Z+1, r1	; 0x01
+ b8e:	e9 cf       	rjmp	.-46     	; 0xb62 <__LOCK_REGION_LENGTH__+0x762>
+
+00000b90 <eeprom_read_word>:
+eeprom_read_word():
+ b90:	a8 e1       	ldi	r26, 0x18	; 24
+ b92:	b0 e0       	ldi	r27, 0x00	; 0
+ b94:	42 e0       	ldi	r20, 0x02	; 2
+ b96:	50 e0       	ldi	r21, 0x00	; 0
+ b98:	05 c0       	rjmp	.+10     	; 0xba4 <eeprom_read_blraw>
+
+00000b9a <eeprom_write_word>:
+eeprom_write_word():
+ b9a:	12 d0       	rcall	.+36     	; 0xbc0 <eeprom_write_byte>
+ b9c:	27 2f       	mov	r18, r23
+ b9e:	11 c0       	rjmp	.+34     	; 0xbc2 <eeprom_write_r18>
+
+00000ba0 <eeprom_read_block>:
+eeprom_read_block():
+ ba0:	dc 01       	movw	r26, r24
+ ba2:	cb 01       	movw	r24, r22
+
+00000ba4 <eeprom_read_blraw>:
+ ba4:	fc 01       	movw	r30, r24
+ ba6:	e1 99       	sbic	0x1c, 1	; 28
+ ba8:	fe cf       	rjmp	.-4      	; 0xba6 <eeprom_read_blraw+0x2>
+ baa:	06 c0       	rjmp	.+12     	; 0xbb8 <eeprom_read_blraw+0x14>
+ bac:	ff bb       	out	0x1f, r31	; 31
+ bae:	ee bb       	out	0x1e, r30	; 30
+ bb0:	e0 9a       	sbi	0x1c, 0	; 28
+ bb2:	31 96       	adiw	r30, 0x01	; 1
+ bb4:	0d b2       	in	r0, 0x1d	; 29
+ bb6:	0d 92       	st	X+, r0
+ bb8:	41 50       	subi	r20, 0x01	; 1
+ bba:	50 40       	sbci	r21, 0x00	; 0
+ bbc:	b8 f7       	brcc	.-18     	; 0xbac <eeprom_read_blraw+0x8>
+ bbe:	08 95       	ret
+
+00000bc0 <eeprom_write_byte>:
+eeprom_write_byte():
+ bc0:	26 2f       	mov	r18, r22
+
+00000bc2 <eeprom_write_r18>:
+ bc2:	e1 99       	sbic	0x1c, 1	; 28
+ bc4:	fe cf       	rjmp	.-4      	; 0xbc2 <eeprom_write_r18>
+ bc6:	1c ba       	out	0x1c, r1	; 28
+ bc8:	9f bb       	out	0x1f, r25	; 31
+ bca:	8e bb       	out	0x1e, r24	; 30
+ bcc:	2d bb       	out	0x1d, r18	; 29
+ bce:	0f b6       	in	r0, 0x3f	; 63
+ bd0:	f8 94       	cli
+ bd2:	e2 9a       	sbi	0x1c, 2	; 28
+ bd4:	e1 9a       	sbi	0x1c, 1	; 28
+ bd6:	0f be       	out	0x3f, r0	; 63
+ bd8:	01 96       	adiw	r24, 0x01	; 1
+ bda:	08 95       	ret
+
+00000bdc <__mulhi3>:
+__mulhi3():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:312
+ bdc:	00 24       	eor	r0, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:313
+ bde:	55 27       	eor	r21, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:314
+ be0:	04 c0       	rjmp	.+8      	; 0xbea <__mulhi3+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:317
+ be2:	08 0e       	add	r0, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:318
+ be4:	59 1f       	adc	r21, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:320
+ be6:	88 0f       	add	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:321
+ be8:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:324
+ bea:	00 97       	sbiw	r24, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:325
+ bec:	29 f0       	breq	.+10     	; 0xbf8 <__mulhi3+0x1c>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:328
+ bee:	76 95       	lsr	r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:329
+ bf0:	67 95       	ror	r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:331
+ bf2:	b8 f3       	brcs	.-18     	; 0xbe2 <__mulhi3+0x6>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:335
+ bf4:	71 05       	cpc	r23, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:337
+ bf6:	b9 f7       	brne	.-18     	; 0xbe6 <__mulhi3+0xa>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:340
+ bf8:	80 2d       	mov	r24, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:341
+ bfa:	95 2f       	mov	r25, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:342
+ bfc:	08 95       	ret
+
+00000bfe <__udivmodhi4>:
+__udivmodhi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1408
+ bfe:	aa 1b       	sub	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1409
+ c00:	bb 1b       	sub	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1410
+ c02:	51 e1       	ldi	r21, 0x11	; 17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1411
+ c04:	07 c0       	rjmp	.+14     	; 0xc14 <__udivmodhi4_ep>
+
+00000c06 <__udivmodhi4_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1413
+ c06:	aa 1f       	adc	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1414
+ c08:	bb 1f       	adc	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1415
+ c0a:	a6 17       	cp	r26, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1416
+ c0c:	b7 07       	cpc	r27, r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1417
+ c0e:	10 f0       	brcs	.+4      	; 0xc14 <__udivmodhi4_ep>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1418
+ c10:	a6 1b       	sub	r26, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1419
+ c12:	b7 0b       	sbc	r27, r23
+
+00000c14 <__udivmodhi4_ep>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1421
+ c14:	88 1f       	adc	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1422
+ c16:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1423
+ c18:	5a 95       	dec	r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1424
+ c1a:	a9 f7       	brne	.-22     	; 0xc06 <__udivmodhi4_loop>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1425
+ c1c:	80 95       	com	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1426
+ c1e:	90 95       	com	r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1428
+ c20:	bc 01       	movw	r22, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1430
+ c22:	cd 01       	movw	r24, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1432
+ c24:	08 95       	ret
+
+00000c26 <__divmodhi4>:
+__divmodhi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1440
+ c26:	97 fb       	bst	r25, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1441
+ c28:	07 2e       	mov	r0, r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1442
+ c2a:	16 f4       	brtc	.+4      	; 0xc30 <__divmodhi4+0xa>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1443
+ c2c:	00 94       	com	r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1444
+ c2e:	06 d0       	rcall	.+12     	; 0xc3c <__divmodhi4_neg1>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1446
+ c30:	77 fd       	sbrc	r23, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1447
+ c32:	08 d0       	rcall	.+16     	; 0xc44 <__divmodhi4_neg2>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1448
+ c34:	e4 df       	rcall	.-56     	; 0xbfe <__udivmodhi4>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1449
+ c36:	07 fc       	sbrc	r0, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1450
+ c38:	05 d0       	rcall	.+10     	; 0xc44 <__divmodhi4_neg2>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1451
+ c3a:	3e f4       	brtc	.+14     	; 0xc4a <__divmodhi4_exit>
+
+00000c3c <__divmodhi4_neg1>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1454
+ c3c:	90 95       	com	r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1455
+ c3e:	81 95       	neg	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1456
+ c40:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1457
+ c42:	08 95       	ret
+
+00000c44 <__divmodhi4_neg2>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1460
+ c44:	70 95       	com	r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1461
+ c46:	61 95       	neg	r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1462
+ c48:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000c4a <__divmodhi4_exit>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1464
+ c4a:	08 95       	ret
+
+00000c4c <_exit>:
+exit():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ c4c:	f8 94       	cli
+
+00000c4e <__stop_program>:
+__stop_program():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ c4e:	ff cf       	rjmp	.-2      	; 0xc4e <__stop_program>
